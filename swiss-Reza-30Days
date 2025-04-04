@@ -34,7 +34,10 @@
     ],
     "rules": [
       {
-        "domain": "liferobot.darkping.net",
+        "domain": [
+          "hajlab.ucdavis.edu",
+          "www.speedtest.net"
+        ],
         "server": "dns-direct"
       },
       {
@@ -51,16 +54,16 @@
     "final": "dns-remote",
     "static_ips": {
       "sky.rethinkdns.com": [
-        "188.114.96.3",
+        "2a06:98c1:3121::3",
+        "2a06:98c1:3120::3",
         "188.114.97.3",
+        "188.114.96.3",
+        "104.17.148.22",
+        "104.17.147.22",
         "2a06:98c1:3120::3",
         "2a06:98c1:3121::3",
-        "104.17.147.22",
-        "104.17.148.22",
         "188.114.97.3",
-        "188.114.96.3",
-        "2a06:98c1:3121::3",
-        "2a06:98c1:3120::3"
+        "188.114.96.3"
       ]
     },
     "independent_cache": true
@@ -101,7 +104,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "@Hiddify_nexttt 🇨🇭 § 0"
+        "🇷🇺@Hiddify_nexttt  § 0",
+        "🇩🇪@Hiddify_nexttt  § 1"
       ],
       "default": "auto"
     },
@@ -109,29 +113,43 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "@Hiddify_nexttt 🇨🇭 § 0"
+        "🇷🇺@Hiddify_nexttt  § 0",
+        "🇩🇪@Hiddify_nexttt  § 1"
       ],
       "url": "http://cp.cloudflare.com/",
       "interval": "10m0s"
     },
     {
       "type": "vless",
-      "tag": "@Hiddify_nexttt 🇨🇭 § 0",
-      "server": "liferobot.darkping.net",
-      "server_port": 2593,
-      "uuid": "1f1eb34f-9f6d-4316-b7a7-f95ecb6261bb",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "stackoverflow.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
+      "tag": "🇷🇺@Hiddify_nexttt  § 0",
+      "server": "hajlab.ucdavis.edu",
+      "server_port": 80,
+      "uuid": "27392eed-bb2a-46fc-8ba4-f8e4f05d81f5",
+      "transport": {
+        "type": "ws",
+        "path": "/@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy",
+        "headers": {
+          "Host": "joinshhproxybedeeeeeee.ir"
         },
-        "reality": {
-          "enabled": true,
-          "public_key": "stkzXR66Onu6K6sujTw1rr27jdnhHpC5EUp8CF4wQHI"
-        }
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪@Hiddify_nexttt  § 1",
+      "server": "www.speedtest.net",
+      "server_port": 80,
+      "uuid": "c32d78b9-dc18-4dfc-888e-dca655bb0787",
+      "transport": {
+        "type": "ws",
+        "path": "/@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy",
+        "headers": {
+          "Host": "Www.speedtest.net.speedtest2.cfd."
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
       },
       "packet_encoding": ""
     },
