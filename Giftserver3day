@@ -58,10 +58,10 @@
         "188.114.97.3",
         "2a06:98c1:3121::3",
         "2a06:98c1:3120::3",
-        "104.17.147.22",
         "104.17.148.22",
-        "188.114.96.3",
+        "104.17.147.22",
         "188.114.97.3",
+        "188.114.96.3",
         "2a06:98c1:3121::3",
         "2a06:98c1:3120::3"
       ]
@@ -124,7 +124,7 @@
       "tag": "🇷🇺@Hiddify_nexttt  § 0",
       "server": "hajlab.ucdavis.edu",
       "server_port": 80,
-      "uuid": "33bbdcb7-9325-4ff4-9894-1d17ee2aa997",
+      "uuid": "a36abe7e-5728-412c-b505-72ce04363350",
       "transport": {
         "type": "ws",
         "path": "/@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy",
@@ -141,7 +141,7 @@
       "tag": "🇩🇪@Hiddify_nexttt  § 1",
       "server": "www.speedtest.net",
       "server_port": 80,
-      "uuid": "518d7acd-c48b-4896-9145-725b77be4221",
+      "uuid": "9b531989-aa92-4844-b38c-ba9f0be4e5b1",
       "transport": {
         "type": "ws",
         "path": "/@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy",
@@ -150,7 +150,7 @@
         },
         "max_early_data": 2048,
         "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
+},
       "packet_encoding": ""
     },
     {
