@@ -34,7 +34,10 @@
     ],
     "rules": [
       {
-        "domain": "www.speedtest.net",
+        "domain": [
+          "hajlab.ucdavis.edu",
+          "www.speedtest.net"
+        ],
         "server": "dns-direct"
       },
       {
@@ -51,14 +54,14 @@
     "final": "dns-remote",
     "static_ips": {
       "sky.rethinkdns.com": [
-        "188.114.97.3",
         "188.114.96.3",
+        "188.114.97.3",
         "2a06:98c1:3121::3",
         "2a06:98c1:3120::3",
         "104.17.147.22",
         "104.17.148.22",
-        "188.114.97.3",
         "188.114.96.3",
+        "188.114.97.3",
         "2a06:98c1:3121::3",
         "2a06:98c1:3120::3"
       ]
@@ -101,7 +104,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪@Hiddify_nexttt  § 0"
+        "🇷🇺@Hiddify_nexttt  § 0",
+        "🇩🇪@Hiddify_nexttt  § 1"
       ],
       "default": "auto"
     },
@@ -109,17 +113,35 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪@Hiddify_nexttt  § 0"
+        "🇷🇺@Hiddify_nexttt  § 0",
+        "🇩🇪@Hiddify_nexttt  § 1"
       ],
       "url": "http://cp.cloudflare.com/",
       "interval": "10m0s"
     },
     {
       "type": "vless",
-      "tag": "🇩🇪@Hiddify_nexttt  § 0",
+      "tag": "🇷🇺@Hiddify_nexttt  § 0",
+      "server": "hajlab.ucdavis.edu",
+      "server_port": 80,
+      "uuid": "33bbdcb7-9325-4ff4-9894-1d17ee2aa997",
+      "transport": {
+        "type": "ws",
+        "path": "/@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy",
+        "headers": {
+          "Host": "joinshhproxybedeeeeeee.ir"
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪@Hiddify_nexttt  § 1",
       "server": "www.speedtest.net",
       "server_port": 80,
-      "uuid": "f232bb99-5661-4a01-9d95-21a75cd739a4",
+      "uuid": "518d7acd-c48b-4896-9145-725b77be4221",
       "transport": {
         "type": "ws",
         "path": "/@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy",
