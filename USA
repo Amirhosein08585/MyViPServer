@@ -1,0 +1,272 @@
+{
+  "log": {
+    "level": "warn",
+    "output": "box.log",
+    "timestamp": true
+  },
+  "dns": {
+    "servers": [
+      {
+        "tag": "dns-remote",
+        "address": "udp://1.1.1.1",
+        "address_resolver": "dns-direct"
+      },
+      {
+        "tag": "dns-trick-direct",
+        "address": "https://sky.rethinkdns.com/",
+        "detour": "direct-fragment"
+      },
+      {
+        "tag": "dns-direct",
+        "address": "1.1.1.1",
+        "address_resolver": "dns-local",
+        "detour": "direct"
+      },
+      {
+        "tag": "dns-local",
+        "address": "local",
+        "detour": "direct"
+      },
+      {
+        "tag": "dns-block",
+        "address": "rcode://success"
+      }
+    ],
+    "rules": [
+      {
+        "domain": [
+          "s4.db-link01.top",
+          "www.darkroom.lol",
+          "gov.uk",
+          "ns3849026.ip-217-182-198.eu",
+          "tw1.ydso.xyz",
+          "ov-germany1.09vpn.com",
+          "az05.beyondy.cfd",
+          "s2.db-link01.top",
+          "2.forlive.live",
+          "s4.db-link02.top",
+          "s1.db-link02.top",
+          "us1.cowvpn.org",
+          "indiavideo.sbs",
+          "cf.fovi.tk",
+          "us-boardman-oregon-2.keenvpn.me",
+          "japan-5.keenvpn.me",
+          "jp05-vm0.entry.srthdw.art",
+          "sg2.cowvpn.org",
+          "se.899994.xyz",
+          "tls.01.node-for-bigairport.win",
+          "uk-dc1.yangon.club",
+          "shadowsocks.ctsubvpn.ggff.net",
+          "war.ssvpnapp.win",
+          "visa.org",
+          "gy.youaremygod.top",
+          "exchange.gameaurela.click",
+          "tokyo.899994.xyz",
+          "s5.db-link02.top",
+          "3h-poland1.09vpn.com",
+          "mods-destruction-academy-gear.trycloudflare.com",
+          "us.cowvpn.org",
+          "ca225.vpnbook.com",
+          "tls.84.node-for-bigairport.win",
+          "tls.04.node-for-bigairport.win",
+          "shsus.256709394.xyz",
+          "s1.db-link01.top",
+          "beyonddbc.sbs",
+          "nl.899994.xyz",
+          "beesyar.org",
+          "s4.cn-db.top",
+          "ff.kncc2.top",
+          "1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top",
+          "de1.opensocks.site",
+          "azarbayjab1.1p1.pages.dev",
+          "ovhwuxian.pai50288.uk",
+          "sgp.fastsoonlink.com",
+          "northflank.107421.xyz",
+          "s5.db-link01.top",
+          "s5.cn-db.top",
+          "hms23.fixedfloati.cfd",
+          "ss1.ctsubvpn.ggff.net",
+          "s2.cn-db.top",
+          "portland.899994.xyz",
+          "hdfrplcpnl1.airlineshoma.com",
+          "br.899994.xyz",
+          "s2.db-link02.top",
+          "jp01-alt-vm0.entry.srthdw.art",
+          "s1.cn-db.top",
+          "lax2.ibgfw.top",
+          "irvideo.cfd",
+          "sgfqkqmltcy.site",
+          "mx2.drawnrisha.one",
+          "us1.opensocks.site",
+          "www.visa.com.tw",
+          "buffalo.899994.xyz",
+          "cpanel.erade33.ir",
+          "jp03-alt-vm0.entry.srthdw.art",
+          "hsj.lbxjc.online",
+          "fr1.opensocks.site",
+          "it0.899994.xyz",
+          "jp.cowvpn.org",
+          "www.speedtest.net",
+          "frankfurt.faforex.eu.org",
+          "pq-brazil1.09vpn.com"
+        ],
+        "server": "dns-direct"
+      },
+      {
+        "domain_suffix": ".ir",
+        "geosite": "ir",
+        "server": "dns-direct"
+      },
+      {
+        "domain": "cp.cloudflare.com",
+        "server": "dns-remote",
+        "rewrite_ttl": 3000
+      }
+    ],
+    "final": "dns-remote",
+    "static_ips": {
+      "sky.rethinkdns.com": [
+        "2a06:98c1:3120::3",
+        "2a06:98c1:3121::3",
+        "188.114.97.3",
+        "188.114.96.3",
+        "104.17.148.22",
+        "104.17.147.22",
+        "2a06:98c1:3120::3",
+        "2a06:98c1:3121::3",
+        "188.114.97.3",
+        "188.114.96.3"
+      ]
+    },
+    "independent_cache": true
+  },
+  "inbounds": [
+    {
+      "type": "tun",
+      "tag": "tun-in",
+      "mtu": 9000,
+      "inet4_address": "172.19.0.1/28",
+      "auto_route": true,
+      "strict_route": true,
+      "endpoint_independent_nat": true,
+      "stack": "mixed",
+      "sniff": true,
+      "sniff_override_destination": true
+    },
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "127.0.0.1",
+      "listen_port": 2334,
+      "sniff": true,
+      "sniff_override_destination": true
+    },
+    {
+      "type": "direct",
+      "tag": "dns-in",
+      "listen": "127.0.0.1",
+      "listen_port": 6450,
+      "override_address": "1.1.1.1",
+      "override_port": 53
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+         "United+States § 48"
+      ],
+      "default": "auto"
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "United+States § 48"
+             ],
+      "url": "http://cp.cloudflare.com/",
+      "interval": "10m0s"
+    },
+    
+    {
+      "type": "shadowsocks",
+      "tag": "United+States § 48",
+      "server": "92.118.112.111",
+      "server_port": 18622,
+      "method": "chacha20-ietf-poly1305",
+      "password": "kun9oFD7nyskqhHsCXXxX9"
+    },
+            {
+      "type": "dns",
+      "tag": "dns-out"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "direct",
+      "tag": "direct-fragment",
+      "tls_fragment": {
+        "enabled": true,
+        "size": "1-500",
+        "sleep": "0-500"
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "bypass"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ],
+  "route": {
+    "geoip": {
+      "path": "geo-assets/sagernet-sing-geoip-geoip.db"
+    },
+    "geosite": {
+      "path": "geo-assets/sagernet-sing-geosite-geosite.db"
+    },
+    "rules": [
+      {
+        "inbound": "dns-in",
+        "outbound": "dns-out"
+      },
+      {
+        "port": 53,
+        "outbound": "dns-out"
+      },
+      {
+        "clash_mode": "Direct",
+        "outbound": "direct"
+      },
+      {
+        "clash_mode": "Global",
+        "outbound": "select"
+      },
+      {
+        "domain_suffix": ".ir",
+        "geosite": "ir",
+        "geoip": "ir",
+        "outbound": "bypass"
+      }
+    ],
+    "final": "select",
+    "auto_detect_interface": true,
+    "override_android_vpn": true
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true,
+      "path": "clash.db"
+    },
+    "clash_api": {
+      "external_controller": "127.0.0.1:6756",
+      "secret": "BGXpvC16IukFHbHU"
+    }
+  }
+}
