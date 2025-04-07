@@ -54,16 +54,16 @@
     "final": "dns-remote",
     "static_ips": {
       "sky.rethinkdns.com": [
-        "2a06:98c1:3120::3",
         "2a06:98c1:3121::3",
+        "2a06:98c1:3120::3",
         "188.114.97.3",
         "188.114.96.3",
-        "104.17.148.22",
         "104.17.147.22",
+        "104.17.148.22",
         "2a06:98c1:3120::3",
         "2a06:98c1:3121::3",
-        "188.114.97.3",
-        "188.114.96.3"
+        "188.114.96.3",
+        "188.114.97.3"
       ]
     },
     "independent_cache": true
@@ -93,9 +93,7 @@
       "type": "direct",
       "tag": "dns-in",
       "listen": "127.0.0.1",
-      "listen_port": 6450,
-      "override_address": "1.1.1.1",
-      "override_port": 53
+      "listen_port": 6450
     }
   ],
   "outbounds": [
@@ -117,14 +115,15 @@
         "🇩🇪@Hiddify_nexttt  § 1"
       ],
       "url": "http://cp.cloudflare.com/",
-      "interval": "10m0s"
+      "interval": "10m0s",
+      "idle_timeout": "1h40m0s"
     },
     {
       "type": "vless",
       "tag": "🇷🇺@Hiddify_nexttt  § 0",
       "server": "hajlab.ucdavis.edu",
       "server_port": 80,
-      "uuid": "72282330-1053-4855-bedb-70b57c8407b6",
+      "uuid": "f23d345f-fb29-488a-be3e-3822d5b9d8e2",
       "transport": {
         "type": "ws",
         "path": "/@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy",
@@ -141,7 +140,7 @@
       "tag": "🇩🇪@Hiddify_nexttt  § 1",
       "server": "www.speedtest.net",
       "server_port": 80,
-      "uuid": "e1d4b6bd-9021-4392-af04-bda2870109bb",
+      "uuid": "2ddae4f5-2780-4e68-8d26-1d1da6000ef6",
       "transport": {
         "type": "ws",
         "path": "/@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy",
@@ -150,8 +149,8 @@
         },
         "max_early_data": 2048,
         "early_data_header_name": "Sec-WebSocket-Protocol"
-},
-      "packet_encoding": ""
+      },
+"packet_encoding": ""
     },
     {
       "type": "dns",
@@ -220,7 +219,8 @@
       "path": "clash.db"
     },
     "clash_api": {
-      "external_controller": "127.0.0.1:6756"
+      "external_controller": "127.0.0.1:6756",
+      "secret": "SEtJA7fiyVGfGDuv"
     }
   }
 }
