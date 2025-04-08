@@ -54,14 +54,14 @@
     "final": "dns-remote",
     "static_ips": {
       "sky.rethinkdns.com": [
-        "2a06:98c1:3121::3",
         "2a06:98c1:3120::3",
-        "188.114.97.3",
+        "2a06:98c1:3121::3",
         "188.114.96.3",
+        "188.114.97.3",
         "104.17.148.22",
         "104.17.147.22",
-        "2a06:98c1:3120::3",
         "2a06:98c1:3121::3",
+        "2a06:98c1:3120::3",
         "188.114.97.3",
         "188.114.96.3"
       ]
@@ -102,8 +102,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "Gift3day +1 § 0",
-        "Gift3day +2 § 1"
+        "🇷🇺@Hiddify_nexttt  § 0",
+        "🇩🇪@Hiddify_nexttt  § 1"
       ],
       "default": "auto"
     },
@@ -111,8 +111,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "Gift3day +1 § 0",
-        "Gift3day +2 § 1"
+        "🇷🇺@Hiddify_nexttt  § 0",
+        "🇩🇪@Hiddify_nexttt  § 1"
       ],
       "url": "http://cp.cloudflare.com/",
       "interval": "10m0s",
@@ -120,10 +120,10 @@
     },
     {
       "type": "vless",
-      "tag": "Gift3day +1 § 0",
+      "tag": "🇷🇺@Hiddify_nexttt  § 0",
       "server": "hajlab.ucdavis.edu",
       "server_port": 80,
-      "uuid": "64b8bdd9-7547-48a5-bc95-7b9bad95de45",
+      "uuid": "45372e34-7780-4aaa-b989-86ccc061dd70",
       "transport": {
         "type": "ws",
         "path": "/@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy",
@@ -137,10 +137,10 @@
     },
     {
       "type": "vless",
-      "tag": "Gift3day +2 § 1",
+      "tag": "🇩🇪@Hiddify_nexttt  § 1",
       "server": "www.speedtest.net",
       "server_port": 80,
-      "uuid": "75e1bb74-9989-4bca-9e5b-9d5b831ba00b",
+      "uuid": "c3553092-2bbe-4168-8f0b-bbb2db53f9a1",
       "transport": {
         "type": "ws",
         "path": "/@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy",
@@ -220,7 +220,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "OEIpUN_UhR4_yPOE"
+      "secret": "hH7g0w0fWOzlTgVD"
     }
   }
 }
