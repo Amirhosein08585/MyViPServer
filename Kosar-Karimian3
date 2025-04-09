@@ -49,14 +49,14 @@
       "sky.rethinkdns.com": [
         "2a06:98c1:3120::3",
         "2a06:98c1:3121::3",
-        "188.114.96.3",
         "188.114.97.3",
+        "188.114.96.3",
         "104.17.147.22",
         "104.17.148.22",
-        "2a06:98c1:3120::3",
-        "2a06:98c1:3121::3",
-        "188.114.96.3",
-        "188.114.97.3"
+        "2a06:98c1:3120::1",
+        "2a06:98c1:3121::1",
+        "188.114.97.3",
+        "188.114.96.3"
       ]
     },
     "independent_cache": true
@@ -95,9 +95,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-      
-        "@VLESS_VPN_135🇩🇪 § 3"
-        
+       
+        "@Hiddify_Nexttt 🇩🇪 § 3"
       ],
       "default": "auto"
     },
@@ -105,26 +104,25 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        
-        "@VLESS_VPN_135🇩🇪 § 3"
-        
+      
+        "@Hiddify_Nexttt 🇩🇪 § 3"
       ],
       "url": "http://cp.cloudflare.com/",
       "interval": "10m0s",
       "idle_timeout": "1h40m0s"
     },
-    {
+     {
       "type": "shadowsocks",
-      "tag": "@VLESS_VPN_135🇩🇪 § 3",
+      "tag": "@Hiddify_Nexttt 🇩🇪 § 3",
       "server": "193.233.253.224",
       "server_port": 38264,
       "method": "chacha20-ietf-poly1305",
       "password": "dAkrqO7HfAe0xBTPGE02N5"
     },
-    {
+       {
       "type": "dns",
       "tag": "dns-out"
-    },
+},
     {
       "type": "direct",
       "tag": "direct"
@@ -189,7 +187,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "zdfbM74hkLKm2neB"
+      "secret": "pCPdeCKeKUijW7b0"
     }
   }
 }
