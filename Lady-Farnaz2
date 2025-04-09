@@ -47,16 +47,14 @@
     "final": "dns-remote",
     "static_ips": {
       "sky.rethinkdns.com": [
-        "188.114.96.3",
         "188.114.97.3",
+        "188.114.96.3",
         "2a06:98c1:3121::3",
         "2a06:98c1:3120::3",
-        "104.17.148.22",
         "104.17.147.22",
+        "104.17.148.22",
         "188.114.96.3",
-        "188.114.97.3",
-        "2a06:98c1:3121::3",
-        "2a06:98c1:3120::3"
+        "188.114.97.3"
       ]
     },
     "independent_cache": true
@@ -97,7 +95,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "@Hiddify_Nexttt 🇩🇪 § 3"
+        "@Hiddify_nexttt 🫠 § 0"
       ],
       "default": "auto"
     },
@@ -105,7 +103,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "@Hiddify_Nexttt 🇩🇪 § 3"
+        "@Hiddify_nexttt 🫠 § 0"
       ],
       "url": "http://cp.cloudflare.com/",
       "interval": "10m0s",
@@ -113,11 +111,11 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "@Hiddify_Nexttt 🇩🇪 § 3",
-      "server": "193.233.253.224",
-      "server_port": 38264,
-      "method": "chacha20-ietf-poly1305",
-      "password": "dAkrqO7HfAe0xBTPGE02N5"
+      "tag": "@Hiddify_nexttt 🫠 § 0",
+      "server": "2.56.122.207",
+      "server_port": 18067,
+      "method": "aes-256-gcm",
+      "password": "X/huOjkXmyJA6MYim4xIZyX7MyUTeUQDit+3uqL4no8="
     },
     {
       "type": "dns",
@@ -187,7 +185,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "AZacKco_uIU9VsXX"
+      "secret": "d4OR-8xzsloRs9LS"
     }
   }
 }
