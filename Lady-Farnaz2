@@ -49,12 +49,14 @@
       "sky.rethinkdns.com": [
         "188.114.97.3",
         "188.114.96.3",
-        "2a06:98c1:3121::3",
         "2a06:98c1:3120::3",
+        "2a06:98c1:3121::3",
         "104.17.147.22",
         "104.17.148.22",
         "188.114.96.3",
-        "188.114.97.3"
+        "188.114.97.3",
+        "2a06:98c1:3120::3",
+        "2a06:98c1:3121::3"
       ]
     },
     "independent_cache": true
@@ -112,10 +114,10 @@
     {
       "type": "shadowsocks",
       "tag": "@Hiddify_nexttt 🫠 § 0",
-      "server": "2.56.122.207",
-      "server_port": 18067,
-      "method": "aes-256-gcm",
-      "password": "X/huOjkXmyJA6MYim4xIZyX7MyUTeUQDit+3uqL4no8="
+      "server": "89.22.239.2",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "3bDW}~Zm2t``"
     },
     {
       "type": "dns",
@@ -185,7 +187,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "d4OR-8xzsloRs9LS"
+      "secret": "bWnVZaWHiOiAE4p-"
     }
   }
 }
