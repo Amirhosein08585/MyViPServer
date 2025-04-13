@@ -34,85 +34,6 @@
     ],
     "rules": [
       {
-        "domain": [
-          "shadowsocks.ctsubvpn.ggff.net",
-          "hdfrplcpnl1.airlineshoma.com",
-          "us.cowvpn.org",
-          "pq-brazil1.09vpn.com",
-          "www.darkroom.lol",
-          "tw1.ydso.xyz",
-          "japan-5.keenvpn.me",
-          "jp05-vm0.entry.srthdw.art",
-          "jp03-alt-vm0.entry.srthdw.art",
-          "azarbayjab1.1p1.pages.dev",
-          "ov-germany1.09vpn.com",
-          "tls.84.node-for-bigairport.win",
-          "visa.org",
-          "tls.01.node-for-bigairport.win",
-          "s2.db-link01.top",
-          "northflank.107421.xyz",
-          "nl.899994.xyz",
-          "cpanel.erade33.ir",
-          "beesyar.org",
-          "us1.opensocks.site",
-          "war.ssvpnapp.win",
-          "ss1.ctsubvpn.ggff.net",
-          "hsj.lbxjc.online",
-          "www.speedtest.net",
-          "www.visa.com.tw",
-          "ovhwuxian.pai50288.uk",
-          "s1.db-link01.top",
-          "portland.899994.xyz",
-          "s4.db-link01.top",
-          "gy.youaremygod.top",
-          "hms23.fixedfloati.cfd",
-          "2.forlive.live",
-          "it0.899994.xyz",
-          "s1.db-link02.top",
-          "ff.kncc2.top",
-          "cf.fovi.tk",
-          "s5.cn-db.top",
-          "uk-dc1.yangon.club",
-          "se.899994.xyz",
-          "tls.04.node-for-bigairport.win",
-          "3h-poland1.09vpn.com",
-          "s2.cn-db.top",
-          "lax2.ibgfw.top",
-          "beyonddbc.sbs",
-          "mods-destruction-academy-gear.trycloudflare.com",
-          "ca225.vpnbook.com",
-          "fr1.opensocks.site",
-          "s2.db-link02.top",
-          "br.899994.xyz",
-          "mx2.drawnrisha.one",
-          "s4.cn-db.top",
-          "az05.beyondy.cfd",
-          "sgp.fastsoonlink.com",
-          "sgfqkqmltcy.site",
-          "us1.cowvpn.org",
-          "s4.db-link02.top",
-          "jp01-alt-vm0.entry.srthdw.art",
-          "sg2.cowvpn.org",
-          "s5.db-link02.top",
-          "frankfurt.faforex.eu.org",
-          "exchange.gameaurela.click",
-          "us-boardman-oregon-2.keenvpn.me",
-          "ns3849026.ip-217-182-198.eu",
-          "1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top",
-          "irvideo.cfd",
-          "gov.uk",
-          "tokyo.899994.xyz",
-          "jp.cowvpn.org",
-          "s1.cn-db.top",
-          "s5.db-link01.top",
-          "de1.opensocks.site",
-          "indiavideo.sbs",
-          "buffalo.899994.xyz",
-          "shsus.256709394.xyz"
-        ],
-        "server": "dns-direct"
-      },
-      {
         "domain_suffix": ".ir",
         "geosite": "ir",
         "server": "dns-direct"
@@ -128,14 +49,14 @@
       "sky.rethinkdns.com": [
         "2a06:98c1:3121::3",
         "2a06:98c1:3120::3",
-        "188.114.97.3",
         "188.114.96.3",
-        "104.17.147.22",
+        "188.114.97.3",
         "104.17.148.22",
+        "104.17.147.22",
         "2a06:98c1:3121::3",
         "2a06:98c1:3120::3",
-        "188.114.97.3",
-        "188.114.96.3"
+        "188.114.96.3",
+        "188.114.97.3"
       ]
     },
     "independent_cache": true
@@ -175,8 +96,8 @@
       "type": "selector",
       "tag": "select",
       "outbounds": [
-        "auto",   
-        "Lithuania § 0"
+        "auto",
+        "🇩🇪@Hiddify_nexttt 🇩🇪 § 0"
       ],
       "default": "auto"
     },
@@ -184,22 +105,20 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-               "Lithuania § 0"
+        "🇩🇪@Hiddify_nexttt 🇩🇪 § 0"
       ],
       "url": "http://cp.cloudflare.com/",
       "interval": "10m0s",
       "idle_timeout": "1h40m0s"
     },
-   
     {
       "type": "shadowsocks",
-      "tag": "Lithuania § 0",
-      "server": "45.87.175.157",
-      "server_port": 8080,
+      "tag": "🇩🇪@Hiddify_nexttt 🇩🇪 § 0",
+      "server": "193.233.253.224",
+      "server_port": 38264,
       "method": "chacha20-ietf-poly1305",
-      "password": "1RWwXhwfAB5gAEozU4G2Pg"
+      "password": "AIPFgdEbTtVcFC7GLw0rHJ"
     },
-   
     {
       "type": "dns",
       "tag": "dns-out"
@@ -268,7 +187,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "BGXpvC16IukFHbHU"
+      "secret": "u-LG7y3XpTgkDq3y"
     }
   }
 }
