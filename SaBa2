@@ -47,14 +47,14 @@
     "final": "dns-remote",
     "static_ips": {
       "sky.rethinkdns.com": [
-        "2a06:98c1:3121::3",
         "2a06:98c1:3120::3",
+        "2a06:98c1:3121::3",
         "188.114.96.3",
         "188.114.97.3",
         "104.17.148.22",
         "104.17.147.22",
-        "2a06:98c1:3121::3",
         "2a06:98c1:3120::3",
+        "2a06:98c1:3121::3",
         "188.114.96.3",
         "188.114.97.3"
       ]
@@ -97,7 +97,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪@Hiddify_nexttt 🇩🇪 § 0"
+        "🇩🇪 29 روز مانده § 0"
       ],
       "default": "auto"
     },
@@ -105,7 +105,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪@Hiddify_nexttt 🇩🇪 § 0"
+        "🇩🇪 29 روز مانده § 0"
       ],
       "url": "http://cp.cloudflare.com/",
       "interval": "10m0s",
@@ -113,7 +113,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇩🇪@Hiddify_nexttt 🇩🇪 § 0",
+      "tag": "🇩🇪 29 روز مانده § 0",
       "server": "193.233.253.224",
       "server_port": 38264,
       "method": "chacha20-ietf-poly1305",
@@ -187,7 +187,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "u-LG7y3XpTgkDq3y"
+      "secret": "ifkWWcyM-A5QAI8R"
     }
   }
 }
