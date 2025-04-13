@@ -34,6 +34,14 @@
     ],
     "rules": [
       {
+        "domain": [
+          "s3.hidemail.app",
+          "beta.wayvpn.ru",
+          "test.colddwight.xyz"
+        ],
+        "server": "dns-direct"
+      },
+      {
         "domain_suffix": ".ir",
         "geosite": "ir",
         "server": "dns-direct"
@@ -47,16 +55,16 @@
     "final": "dns-remote",
     "static_ips": {
       "sky.rethinkdns.com": [
-        "2a06:98c1:3120::3",
         "2a06:98c1:3121::3",
-        "188.114.96.3",
+        "2a06:98c1:3120::3",
         "188.114.97.3",
-        "104.17.148.22",
-        "104.17.147.22",
-        "2a06:98c1:3120::3",
-        "2a06:98c1:3121::3",
         "188.114.96.3",
-        "188.114.97.3"
+        "104.17.147.22",
+        "104.17.148.22",
+        "2a06:98c1:3121::3",
+        "2a06:98c1:3120::3",
+        "188.114.97.3",
+        "188.114.96.3"
       ]
     },
     "independent_cache": true
@@ -97,7 +105,12 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪 27 روز مانده § 0"
+        "@Hiddify_nexttt +1 § 0",
+        "@Hiddify_nexttt +2 § 1",
+        "@Hiddify_nexttt +3 § 2",
+        "@Hiddify_nexttt +4 § 3",
+        "@Hiddify_nexttt +5 § 4",
+        "@Hiddify_nexttt +6 § 5"
       ],
       "default": "auto"
     },
@@ -105,7 +118,12 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪 27 روز مانده § 0"
+        "@Hiddify_nexttt +1 § 0",
+        "@Hiddify_nexttt +2 § 1",
+        "@Hiddify_nexttt +3 § 2",
+        "@Hiddify_nexttt +4 § 3",
+        "@Hiddify_nexttt +5 § 4",
+        "@Hiddify_nexttt +6 § 5"
       ],
       "url": "http://cp.cloudflare.com/",
       "interval": "10m0s",
@@ -113,11 +131,79 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇩🇪 27 روز مانده § 0",
-      "server": "193.233.253.224",
-      "server_port": 38264,
+      "tag": "@Hiddify_nexttt +1 § 0",
+      "server": "194.58.40.9",
+      "server_port": 14073,
       "method": "chacha20-ietf-poly1305",
-      "password": "AIPFgdEbTtVcFC7GLw0rHJ"
+      "password": "S4IHuw1j9JixdqWrp6YJY5"
+    },
+    {
+      "type": "vless",
+      "tag": "@Hiddify_nexttt +2 § 1",
+      "server": "77.105.146.71",
+      "server_port": 443,
+      "uuid": "9054c027-902a-4cdd-b3e4-5812c1f64f4b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdnjs.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "52_VOuL1qKUDzcd3kmafCr6HURdLtiwM3WsfkMBXXUQ",
+          "short_id": "1a899de12f081d62"
+        }
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "@Hiddify_nexttt +3 § 2",
+"server": "85.239.248.94",
+      "server_port": 14976,
+      "method": "chacha20-ietf-poly1305",
+      "password": "Ar1mxNfq0zyi41iFd2BgzF"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "@Hiddify_nexttt +4 § 3",
+      "server": "s3.hidemail.app",
+      "server_port": 19634,
+      "method": "chacha20-ietf-poly1305",
+      "password": "h9q2C2V5FdFZWAKWODk8W3"
+    },
+    {
+      "type": "vless",
+      "tag": "@Hiddify_nexttt +5 § 4",
+      "server": "beta.wayvpn.ru",
+      "server_port": 44963,
+      "uuid": "da3539d2-0b94-451e-a441-3c2405f9dbf4",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "NWqnOGh3fEvowEEzac7sMBwx-O0Zco-28yudFUwZ3wc",
+          "short_id": "b64e11b99ba994"
+        }
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "@Hiddify_nexttt +6 § 5",
+      "server": "test.colddwight.xyz",
+      "server_port": 42802,
+      "method": "chacha20-ietf-poly1305",
+      "password": "2PMQDqamcQJ6dnsFgmXe7yvFUcfi2niLc3zJdVuCeTkYa6ohbWA9nmn88wrMQLq2gEW4wG2FtBAEHgHpAWsjehbxuKfXYezN"
     },
     {
       "type": "dns",
@@ -187,7 +273,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "ifkWWcyM-A5QAI8R"
+      "secret": "5ldGIABOBNMtEt3f"
     }
   }
 }
