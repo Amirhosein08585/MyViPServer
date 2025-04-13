@@ -97,7 +97,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪@Hiddify_nexttt 🇩🇪 § 0"
+        "🇩🇪 23 روز مانده § 0"
       ],
       "default": "auto"
     },
@@ -105,7 +105,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪@Hiddify_nexttt 🇩🇪 § 0"
+        "🇩🇪 23 روز مانده § 0"
       ],
       "url": "http://cp.cloudflare.com/",
       "interval": "10m0s",
@@ -113,7 +113,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇩🇪@Hiddify_nexttt 🇩🇪 § 0",
+      "tag": "🇩🇪 23 روز مانده § 0",
       "server": "193.233.253.224",
       "server_port": 38264,
       "method": "chacha20-ietf-poly1305",
