@@ -34,7 +34,11 @@
     ],
     "rules": [
       {
-        "domain": "test.colddwight.xyz",
+        "domain": [
+          "s3.hidemail.app",
+          "beta.wayvpn.ru",
+          "test.colddwight.xyz"
+        ],
         "server": "dns-direct"
       },
       {
@@ -51,16 +55,16 @@
     "final": "dns-remote",
     "static_ips": {
       "sky.rethinkdns.com": [
-        "188.114.97.3",
         "188.114.96.3",
-        "2a06:98c1:3121::3",
+        "188.114.97.3",
         "2a06:98c1:3120::3",
+        "2a06:98c1:3121::3",
         "104.17.147.22",
         "104.17.148.22",
-        "188.114.97.0",
-        "188.114.96.0",
-        "2a06:98c1:3121::",
-        "2a06:98c1:3120::"
+        "188.114.96.3",
+        "188.114.97.3",
+        "2a06:98c1:3120::3",
+        "2a06:98c1:3121::3"
       ]
     },
     "independent_cache": true
@@ -102,7 +106,11 @@
       "outbounds": [
         "auto",
         "@Hiddify_nexttt +1 § 0",
-        "@Hiddify_nexttt +2 § 1"
+        "@Hiddify_nexttt +2 § 1",
+        "@Hiddify_nexttt +3 § 2",
+        "@Hiddify_nexttt +4 § 3",
+        "@Hiddify_nexttt +5 § 4",
+        "@Hiddify_nexttt +6 § 5"
       ],
       "default": "auto"
     },
@@ -111,37 +119,87 @@
       "tag": "auto",
       "outbounds": [
         "@Hiddify_nexttt +1 § 0",
-        "@Hiddify_nexttt +2 § 1"
+        "@Hiddify_nexttt +2 § 1",
+        "@Hiddify_nexttt +3 § 2",
+        "@Hiddify_nexttt +4 § 3",
+        "@Hiddify_nexttt +5 § 4",
+        "@Hiddify_nexttt +6 § 5"
       ],
       "url": "http://cp.cloudflare.com/",
       "interval": "10m0s",
       "idle_timeout": "1h40m0s"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "@Hiddify_nexttt +1 § 0",
-      "server": "185.234.247.125",
+      "server": "194.58.40.9",
+      "server_port": 14073,
+      "method": "chacha20-ietf-poly1305",
+      "password": "S4IHuw1j9JixdqWrp6YJY5"
+    },
+    {
+      "type": "vless",
+      "tag": "@Hiddify_nexttt +2 § 1",
+      "server": "77.105.146.71",
       "server_port": 443,
-      "uuid": "e0adec6c-cca8-479d-abd2-93c6e5dbb362",
+      "uuid": "9054c027-902a-4cdd-b3e4-5812c1f64f4b",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.booking.com",
+        "server_name": "cdnjs.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "bbPonepVL9zTgjSJtLMYWoJJmrCPmHc9hXuEbbhUKUo",
-          "short_id": "7a58880277965526"
+          "public_key": "52_VOuL1qKUDzcd3kmafCr6HURdLtiwM3WsfkMBXXUQ",
+          "short_id": "1a899de12f081d62"
         }
       },
       "packet_encoding": ""
     },
     {
       "type": "shadowsocks",
-      "tag": "@Hiddify_nexttt +2 § 1",
+      "tag": "@Hiddify_nexttt +3 § 2",
+      "server": "85.239.248.94",
+      "server_port": 14976,
+      "method": "chacha20-ietf-poly1305",
+      "password": "Ar1mxNfq0zyi41iFd2BgzF"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "@Hiddify_nexttt +4 § 3",
+      "server": "s3.hidemail.app",
+      "server_port": 19634,
+      "method": "chacha20-ietf-poly1305",
+      "password": "h9q2C2V5FdFZWAKWODk8W3"
+    },
+    {
+      "type": "vless",
+      "tag": "@Hiddify_nexttt +5 § 4",
+      "server": "beta.wayvpn.ru",
+      "server_port": 44963,
+      "uuid": "da3539d2-0b94-451e-a441-3c2405f9dbf4",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "NWqnOGh3fEvowEEzac7sMBwx-O0Zco-28yudFUwZ3wc",
+          "short_id": "b64e11b99ba994"
+        }
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "@Hiddify_nexttt +6 § 5",
       "server": "test.colddwight.xyz",
       "server_port": 42802,
       "method": "chacha20-ietf-poly1305",
@@ -166,7 +224,7 @@
     },
     {
       "type": "direct",
-"tag": "bypass"
+      "tag": "bypass"
     },
     {
       "type": "block",
@@ -215,8 +273,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "s3zzcBCeCN2ZaqnC"
+      "secret": "knfDulpb7jyKEkhP"
     }
   }
 }
-
