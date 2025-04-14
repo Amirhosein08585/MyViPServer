@@ -34,6 +34,10 @@
     ],
     "rules": [
       {
+        "domain": "test.colddwight.xyz",
+        "server": "dns-direct"
+      },
+      {
         "domain_suffix": ".ir",
         "geosite": "ir",
         "server": "dns-direct"
@@ -47,16 +51,16 @@
     "final": "dns-remote",
     "static_ips": {
       "sky.rethinkdns.com": [
-        "188.114.96.3",
-        "188.114.97.3",
-        "2a06:98c1:3120::3",
-        "2a06:98c1:3121::3",
+        "2a06:98c1:3122::",
+        "2a06:98c1:3123::",
+        "188.114.99.0",
+        "188.114.98.0",
         "104.17.147.22",
         "104.17.148.22",
-        "188.114.96.3",
-        "188.114.97.3",
-        "2a06:98c1:3120::3",
-        "2a06:98c1:3121::3"
+        "2a06:98c1:3122::",
+        "2a06:98c1:3123::",
+        "188.114.98.0",
+        "188.114.99.0"
       ]
     },
     "independent_cache": true
@@ -97,8 +101,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "@Hiddify_nexttt +3 § 0",
-        "@Hiddify_nexttt +4 § 1"
+        "@Hiddify_nexttt +1 § 0",
+        "@Hiddify_nexttt +2 § 1"
       ],
       "default": "auto"
     },
@@ -106,28 +110,42 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "@Hiddify_nexttt +3 § 0",
-        "@Hiddify_nexttt +4 § 1"
+        "@Hiddify_nexttt +1 § 0",
+        "@Hiddify_nexttt +2 § 1"
       ],
       "url": "http://cp.cloudflare.com/",
       "interval": "10m0s",
       "idle_timeout": "1h40m0s"
     },
     {
-      "type": "shadowsocks",
-      "tag": "@Hiddify_nexttt +3 § 0",
-      "server": "194.58.40.9",
-      "server_port": 14073,
-      "method": "chacha20-ietf-poly1305",
-      "password": "POiid1O8Q9gvMKv9BNumtD"
+      "type": "vless",
+      "tag": "@Hiddify_nexttt +1 § 0",
+      "server": "77.105.146.71",
+      "server_port": 443,
+      "uuid": "9054c027-902a-4cdd-b3e4-5812c1f64f4b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdnjs.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "52_VOuL1qKUDzcd3kmafCr6HURdLtiwM3WsfkMBXXUQ",
+          "short_id": "1a899de12f081d62"
+        }
+      },
+      "packet_encoding": ""
     },
     {
       "type": "shadowsocks",
-      "tag": "@Hiddify_nexttt +4 § 1",
-      "server": "194.58.40.9",
-      "server_port": 14073,
+      "tag": "@Hiddify_nexttt +2 § 1",
+      "server": "test.colddwight.xyz",
+      "server_port": 42802,
       "method": "chacha20-ietf-poly1305",
-      "password": "gJz8ZfLKohHooZUdMNxFtX"
+      "password": "2PMQDqamcQJ6dnsFgmXe7yvFUcfi2niLc3zJdVuCeTkYa6ohbWA9nmn88wrMQLq2gEW4wG2FtBAEHgHpAWsjehbxuKfXYezN"
     },
     {
       "type": "dns",
@@ -149,7 +167,7 @@
     {
       "type": "direct",
       "tag": "bypass"
-    },
+},
     {
       "type": "block",
       "tag": "block"
@@ -177,7 +195,7 @@
       },
       {
         "clash_mode": "Global",
-"outbound": "select"
+        "outbound": "select"
       },
       {
         "domain_suffix": ".ir",
@@ -197,7 +215,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "f9g0v2o7l2b-ciYl"
+      "secret": "oMmyazlhoNd9LnrE"
     }
   }
 }
