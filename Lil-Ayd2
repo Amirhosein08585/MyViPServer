@@ -47,12 +47,12 @@
     "final": "dns-remote",
     "static_ips": {
       "sky.rethinkdns.com": [
-        "188.114.97.3",
         "188.114.96.3",
-        "2a06:98c1:3121::3",
+        "188.114.97.3",
         "2a06:98c1:3120::3",
-        "104.17.148.22",
+        "2a06:98c1:3121::3",
         "104.17.147.22",
+        "104.17.148.22",
         "188.114.96.3",
         "188.114.97.3",
         "2a06:98c1:3120::3",
@@ -97,10 +97,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "@Hiddify_nexttt +1 § 0",
-        "@Hiddify_nexttt +2 § 1",
-        "@Hiddify_nexttt +3 § 2",
-        "@Hiddify_nexttt +4 § 3"
+        "@Hiddify_nexttt +3 § 0",
+        "@Hiddify_nexttt +4 § 1"
       ],
       "default": "auto"
     },
@@ -108,10 +106,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "@Hiddify_nexttt +1 § 0",
-        "@Hiddify_nexttt +2 § 1",
-        "@Hiddify_nexttt +3 § 2",
-        "@Hiddify_nexttt +4 § 3"
+        "@Hiddify_nexttt +3 § 0",
+        "@Hiddify_nexttt +4 § 1"
       ],
       "url": "http://cp.cloudflare.com/",
       "interval": "10m0s",
@@ -119,23 +115,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "@Hiddify_nexttt +1 § 0",
-      "server": "91.108.245.111",
-      "server_port": 23600,
-      "method": "chacha20-ietf-poly1305",
-      "password": "HxINCvzbib2C3NjH8o86UP"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "@Hiddify_nexttt +2 § 1",
-      "server": "193.233.253.224",
-      "server_port": 38264,
-      "method": "chacha20-ietf-poly1305",
-      "password": "jxwKar9or2bYiNRM76oJuX"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "@Hiddify_nexttt +3 § 2",
+      "tag": "@Hiddify_nexttt +3 § 0",
       "server": "194.58.40.9",
       "server_port": 14073,
       "method": "chacha20-ietf-poly1305",
@@ -143,7 +123,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "@Hiddify_nexttt +4 § 3",
+      "tag": "@Hiddify_nexttt +4 § 1",
       "server": "194.58.40.9",
       "server_port": 14073,
       "method": "chacha20-ietf-poly1305",
@@ -164,7 +144,7 @@
         "enabled": true,
         "size": "1-500",
         "sleep": "0-500"
-}
+      }
     },
     {
       "type": "direct",
@@ -197,7 +177,7 @@
       },
       {
         "clash_mode": "Global",
-        "outbound": "select"
+"outbound": "select"
       },
       {
         "domain_suffix": ".ir",
@@ -217,7 +197,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "nAusjXvqWid8qK7h"
+      "secret": "f9g0v2o7l2b-ciYl"
     }
   }
 }
