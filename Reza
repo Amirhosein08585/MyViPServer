@@ -34,11 +34,7 @@
     ],
     "rules": [
       {
-        "domain": [
-          "s3.hidemail.app",
-          "beta.wayvpn.ru",
-          "test.colddwight.xyz"
-        ],
+        "domain": "test.colddwight.xyz",
         "server": "dns-direct"
       },
       {
@@ -55,16 +51,16 @@
     "final": "dns-remote",
     "static_ips": {
       "sky.rethinkdns.com": [
-        "2a06:98c1:3121::3",
-        "2a06:98c1:3120::3",
         "188.114.97.3",
         "188.114.96.3",
-        "104.17.147.22",
-        "104.17.148.22",
         "2a06:98c1:3121::3",
         "2a06:98c1:3120::3",
+        "104.17.147.22",
+        "104.17.148.22",
         "188.114.97.3",
-        "188.114.96.3"
+        "188.114.96.3",
+        "2a06:98c1:3120::3",
+        "2a06:98c1:3121::3"
       ]
     },
     "independent_cache": true
@@ -108,9 +104,7 @@
         "@Hiddify_nexttt +1 § 0",
         "@Hiddify_nexttt +2 § 1",
         "@Hiddify_nexttt +3 § 2",
-        "@Hiddify_nexttt +4 § 3",
-        "@Hiddify_nexttt +5 § 4",
-        "@Hiddify_nexttt +6 § 5"
+        "@Hiddify_nexttt +6 § 3"
       ],
       "default": "auto"
     },
@@ -121,9 +115,7 @@
         "@Hiddify_nexttt +1 § 0",
         "@Hiddify_nexttt +2 § 1",
         "@Hiddify_nexttt +3 § 2",
-        "@Hiddify_nexttt +4 § 3",
-        "@Hiddify_nexttt +5 § 4",
-        "@Hiddify_nexttt +6 § 5"
+        "@Hiddify_nexttt +6 § 3"
       ],
       "url": "http://cp.cloudflare.com/",
       "interval": "10m0s",
@@ -162,44 +154,14 @@
     {
       "type": "shadowsocks",
       "tag": "@Hiddify_nexttt +3 § 2",
-"server": "85.239.248.94",
+      "server": "85.239.248.94",
       "server_port": 14976,
       "method": "chacha20-ietf-poly1305",
       "password": "Ar1mxNfq0zyi41iFd2BgzF"
     },
     {
       "type": "shadowsocks",
-      "tag": "@Hiddify_nexttt +4 § 3",
-      "server": "s3.hidemail.app",
-      "server_port": 19634,
-      "method": "chacha20-ietf-poly1305",
-      "password": "h9q2C2V5FdFZWAKWODk8W3"
-    },
-    {
-      "type": "vless",
-      "tag": "@Hiddify_nexttt +5 § 4",
-      "server": "beta.wayvpn.ru",
-      "server_port": 44963,
-      "uuid": "da3539d2-0b94-451e-a441-3c2405f9dbf4",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "NWqnOGh3fEvowEEzac7sMBwx-O0Zco-28yudFUwZ3wc",
-          "short_id": "b64e11b99ba994"
-        }
-      },
-      "packet_encoding": ""
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "@Hiddify_nexttt +6 § 5",
+      "tag": "@Hiddify_nexttt +6 § 3",
       "server": "test.colddwight.xyz",
       "server_port": 42802,
       "method": "chacha20-ietf-poly1305",
@@ -273,7 +235,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "5ldGIABOBNMtEt3f"
+      "secret": "uetIpXlLMVf2cA9l"
     }
   }
 }
