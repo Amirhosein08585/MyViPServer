@@ -51,16 +51,16 @@
     "final": "dns-remote",
     "static_ips": {
       "sky.rethinkdns.com": [
-        "2a06:98c1:3122::",
-        "2a06:98c1:3123::",
-        "188.114.99.0",
-        "188.114.98.0",
+        "188.114.97.3",
+        "188.114.96.3",
+        "2a06:98c1:3121::3",
+        "2a06:98c1:3120::3",
         "104.17.147.22",
         "104.17.148.22",
-        "2a06:98c1:3122::",
-        "2a06:98c1:3123::",
-        "188.114.98.0",
-        "188.114.99.0"
+        "188.114.97.0",
+        "188.114.96.0",
+        "2a06:98c1:3121::",
+        "2a06:98c1:3120::"
       ]
     },
     "independent_cache": true
@@ -120,21 +120,21 @@
     {
       "type": "vless",
       "tag": "@Hiddify_nexttt +1 § 0",
-      "server": "77.105.146.71",
+      "server": "185.234.247.125",
       "server_port": 443,
-      "uuid": "9054c027-902a-4cdd-b3e4-5812c1f64f4b",
+      "uuid": "e0adec6c-cca8-479d-abd2-93c6e5dbb362",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "cdnjs.com",
+        "server_name": "www.booking.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "52_VOuL1qKUDzcd3kmafCr6HURdLtiwM3WsfkMBXXUQ",
-          "short_id": "1a899de12f081d62"
+          "public_key": "bbPonepVL9zTgjSJtLMYWoJJmrCPmHc9hXuEbbhUKUo",
+          "short_id": "7a58880277965526"
         }
       },
       "packet_encoding": ""
@@ -166,8 +166,8 @@
     },
     {
       "type": "direct",
-      "tag": "bypass"
-},
+"tag": "bypass"
+    },
     {
       "type": "block",
       "tag": "block"
@@ -215,7 +215,8 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "oMmyazlhoNd9LnrE"
+      "secret": "s3zzcBCeCN2ZaqnC"
     }
   }
 }
+
