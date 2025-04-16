@@ -53,8 +53,10 @@
         "2a06:98c1:3120::3",
         "104.17.147.22",
         "104.17.148.22",
+        "188.114.96.3",
         "188.114.97.3",
-        "188.114.96.3"
+        "2a06:98c1:3121::3",
+        "2a06:98c1:3120::3"
       ]
     },
     "independent_cache": true
@@ -96,8 +98,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇱 @Hiddify_Nexttt 🇳🇱 § 0",
-        "🇩🇪 @Hiddify_Nexttt 🇩🇪 § 1"
+        "🇳🇱 @Hiddify_Nexttt 🇳🇱 § 0"
       ],
       "default": "auto"
     },
@@ -105,8 +106,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇱 @Hiddify_Nexttt 🇳🇱 § 0",
-        "🇩🇪 @Hiddify_Nexttt 🇩🇪 § 1"
+        "🇳🇱 @Hiddify_Nexttt 🇳🇱 § 0"
       ],
       "url": "http://cp.cloudflare.com/",
       "interval": "10m0s",
@@ -119,14 +119,6 @@
       "server_port": 45063,
       "method": "chacha20-ietf-poly1305",
       "password": "f4wvm109AznWaiSE3l2PPg"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 @Hiddify_Nexttt 🇩🇪 § 1",
-      "server": "95.164.16.152",
-      "server_port": 12240,
-      "method": "chacha20-ietf-poly1305",
-      "password": "zqNBkZNoXgqtiD0wo49QdY"
     },
     {
       "type": "dns",
@@ -175,7 +167,7 @@
         "outbound": "direct"
       },
       {
-"clash_mode": "Global",
+        "clash_mode": "Global",
         "outbound": "select"
       },
       {
@@ -196,7 +188,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "vgBY_SVKD8BeOarK"
+      "secret": "PyExNrkkRA2TVJMl"
     }
   }
 }
