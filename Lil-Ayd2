@@ -34,10 +34,6 @@
     ],
     "rules": [
       {
-        "domain": "test.colddwight.xyz",
-        "server": "dns-direct"
-      },
-      {
         "domain_suffix": ".ir",
         "geosite": "ir",
         "server": "dns-direct"
@@ -51,8 +47,8 @@
     "final": "dns-remote",
     "static_ips": {
       "sky.rethinkdns.com": [
-        "188.114.96.3",
         "188.114.97.3",
+        "188.114.96.3",
         "2a06:98c1:3121::3",
         "2a06:98c1:3120::3",
         "104.17.147.22",
@@ -102,7 +98,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "@Hiddify_nexttt +6 § 0"
+        "🇳🇱@Hiddify_nexttt 🇳🇱 § 0"
       ],
       "default": "auto"
     },
@@ -110,7 +106,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "@Hiddify_nexttt +6 § 0"
+        "🇳🇱@Hiddify_nexttt 🇳🇱 § 0"
       ],
       "url": "http://cp.cloudflare.com/",
       "interval": "10m0s",
@@ -118,11 +114,11 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "@Hiddify_nexttt +6 § 0",
-      "server": "test.colddwight.xyz",
-      "server_port": 42802,
+      "tag": "🇳🇱@Hiddify_nexttt 🇳🇱 § 0",
+      "server": "195.133.21.65",
+      "server_port": 45063,
       "method": "chacha20-ietf-poly1305",
-      "password": "2PMQDqamcQJ6dnsFgmXe7yvFUcfi2niLc3zJdVuCeTkYa6ohbWA9nmn88wrMQLq2gEW4wG2FtBAEHgHpAWsjehbxuKfXYezN"
+      "password": "f4wvm109AznWaiSE3l2PPg"
     },
     {
       "type": "dns",
@@ -176,6 +172,26 @@
       },
       {
         "domain_suffix": ".ir",
+        "geosite": "ir",
+        "geoip": "ir",
+        "outbound": "bypass"
+      }
+    ],
+    "final": "select",
+    "auto_detect_interface": true,
+    "override_android_vpn": true
+  },
+  "experimental": {
+    "cache_file": {
+      "enabled": true,
+      "path": "clash.db"
+    },
+    "clash_api": {
+      "external_controller": "127.0.0.1:6756",
+      "secret": "khylKTCmNw8Dq0R7"
+    }
+  }
+}
 "geosite": "ir",
         "geoip": "ir",
         "outbound": "bypass"
