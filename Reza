@@ -47,16 +47,14 @@
     "final": "dns-remote",
     "static_ips": {
       "sky.rethinkdns.com": [
-        "188.114.97.3",
         "188.114.96.3",
+        "188.114.97.3",
         "2a06:98c1:3121::3",
         "2a06:98c1:3120::3",
         "104.17.147.22",
         "104.17.148.22",
-        "188.114.96.3",
         "188.114.97.3",
-        "2a06:98c1:3120::3",
-        "2a06:98c1:3121::3"
+        "188.114.96.3"
       ]
     },
     "independent_cache": true
@@ -98,7 +96,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇱@Hiddify_nexttt 🇳🇱 § 0"
+        "🇳🇱 @Hiddify_Nexttt 🇳🇱 § 0",
+        "🇩🇪 @Hiddify_Nexttt 🇩🇪 § 1"
       ],
       "default": "auto"
     },
@@ -106,7 +105,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇱@Hiddify_nexttt 🇳🇱 § 0"
+        "🇳🇱 @Hiddify_Nexttt 🇳🇱 § 0",
+        "🇩🇪 @Hiddify_Nexttt 🇩🇪 § 1"
       ],
       "url": "http://cp.cloudflare.com/",
       "interval": "10m0s",
@@ -114,11 +114,19 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇳🇱@Hiddify_nexttt 🇳🇱 § 0",
+      "tag": "🇳🇱 @Hiddify_Nexttt 🇳🇱 § 0",
       "server": "195.133.21.65",
       "server_port": 45063,
       "method": "chacha20-ietf-poly1305",
       "password": "f4wvm109AznWaiSE3l2PPg"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 @Hiddify_Nexttt 🇩🇪 § 1",
+      "server": "95.164.16.152",
+      "server_port": 12240,
+      "method": "chacha20-ietf-poly1305",
+      "password": "zqNBkZNoXgqtiD0wo49QdY"
     },
     {
       "type": "dns",
@@ -167,7 +175,7 @@
         "outbound": "direct"
       },
       {
-        "clash_mode": "Global",
+"clash_mode": "Global",
         "outbound": "select"
       },
       {
@@ -188,27 +196,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "khylKTCmNw8Dq0R7"
-    }
-  }
-}
-"geosite": "ir",
-        "geoip": "ir",
-        "outbound": "bypass"
-      }
-    ],
-    "final": "select",
-    "auto_detect_interface": true,
-    "override_android_vpn": true
-  },
-  "experimental": {
-    "cache_file": {
-      "enabled": true,
-      "path": "clash.db"
-    },
-    "clash_api": {
-      "external_controller": "127.0.0.1:6756",
-      "secret": "EvEwzAhfjEjR1jJ5"
+      "secret": "vgBY_SVKD8BeOarK"
     }
   }
 }
