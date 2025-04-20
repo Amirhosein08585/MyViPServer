@@ -53,12 +53,12 @@
       "sky.rethinkdns.com": [
         "2a06:98c1:3120::3",
         "2a06:98c1:3121::3",
-        "188.114.96.3",
         "188.114.97.3",
-        "104.17.148.22",
+        "188.114.96.3",
         "104.17.147.22",
-        "2a06:98c1:3120::3",
+        "104.17.148.22",
         "2a06:98c1:3121::3",
+        "2a06:98c1:3120::3",
         "188.114.96.3",
         "188.114.97.3"
       ]
@@ -71,7 +71,6 @@
       "tag": "tun-in",
       "mtu": 9000,
       "inet4_address": "172.19.0.1/28",
-      "inet6_address": "fdfe:dcba:9876::1/126",
       "auto_route": true,
       "strict_route": true,
       "endpoint_independent_nat": true,
@@ -91,9 +90,7 @@
       "type": "direct",
       "tag": "dns-in",
       "listen": "127.0.0.1",
-      "listen_port": 6450,
-      "override_address": "1.1.1.1",
-      "override_port": 53
+      "listen_port": 6450
     }
   ],
   "outbounds": [
@@ -102,7 +99,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺@Hiddify_nexttt  § 0"
+        "🇷🇺@Hiddify_Nexttt § 0"
       ],
       "default": "auto"
     },
@@ -110,18 +107,18 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺@Hiddify_nexttt  § 0"
+        "🇷🇺@Hiddify_Nexttt § 0"
       ],
-      "url": "http://cp.cloudflare.com/",
+      "url": "http://connectivitycheck.gstatic.com/generate_204",
       "interval": "10m0s",
       "idle_timeout": "1h40m0s"
     },
     {
       "type": "vless",
-      "tag": "🇷🇺@Hiddify_nexttt  § 0",
+      "tag": "🇷🇺@Hiddify_Nexttt § 0",
       "server": "hajlab.ucdavis.edu",
       "server_port": 80,
-      "uuid": "a407aa29-0f18-4454-8f73-95b712d6a87b",
+      "uuid": "683ecac9-57a0-4019-bbe6-de941d22025f",
       "transport": {
         "type": "ws",
         "path": "/@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy",
@@ -201,7 +198,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "jZbBxBA6Cmdfe_NQ"
+      "secret": "nmD3OiMmXVOAXBwb"
     }
   }
 }
