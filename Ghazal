@@ -34,6 +34,10 @@
     ],
     "rules": [
       {
+        "domain": "hajlab.ucdavis.edu",
+        "server": "dns-direct"
+      },
+      {
         "domain_suffix": ".ir",
         "geosite": "ir",
         "server": "dns-direct"
@@ -47,16 +51,16 @@
     "final": "dns-remote",
     "static_ips": {
       "sky.rethinkdns.com": [
-        "2a06:98c1:3120::3",
-        "2a06:98c1:3121::3",
-        "188.114.97.3",
+        "2a06:98c1:3123::",
+        "2a06:98c1:3122::",
         "188.114.96.3",
+        "188.114.97.3",
         "104.17.148.22",
         "104.17.147.22",
-        "2a06:98c1:3121::3",
-        "2a06:98c1:3120::3",
-        "188.114.96.3",
-        "188.114.97.3"
+        "2a06:98c1:3123::",
+        "2a06:98c1:3122::",
+        "188.114.98.0",
+        "188.114.99.0"
       ]
     },
     "independent_cache": true
@@ -95,7 +99,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪@Hiddify_Nexttt 🇩🇪 § 0"
+        "🇷🇺@Hiddify_Nexttt § 0"
       ],
       "default": "auto"
     },
@@ -103,7 +107,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪@Hiddify_Nexttt 🇩🇪 § 0"
+        "🇷🇺@Hiddify_Nexttt § 0"
       ],
       "url": "http://connectivitycheck.gstatic.com/generate_204",
       "interval": "10m0s",
@@ -111,10 +115,19 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪@Hiddify_Nexttt 🇩🇪 § 0",
-      "server": "144.76.231.24",
-      "server_port": 27717,
-      "uuid": "c2da0d92-e1a1-41eb-aaef-30cacc64f516",
+      "tag": "🇷🇺@Hiddify_Nexttt § 0",
+      "server": "hajlab.ucdavis.edu",
+      "server_port": 80,
+      "uuid": "fd196e9b-2034-46a0-bc7b-e8fa4a20da5e",
+      "transport": {
+        "type": "ws",
+        "path": "/@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy",
+        "headers": {
+          "Host": "joinshhproxybedeeeeeee.ir"
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
       "packet_encoding": ""
     },
     {
@@ -185,7 +198,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "a8ER3BPJO4l-OE13"
+      "secret": "3_mYJyjbcjz4-zji"
     }
   }
 }
