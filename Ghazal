@@ -57,8 +57,8 @@
         "2a06:98c1:3121::",
         "104.17.148.22",
         "104.17.147.22",
-        "188.114.97.0",
         "188.114.96.0",
+        "188.114.97.0",
         "2a06:98c1:3121::",
         "2a06:98c1:3120::"
       ]
@@ -118,7 +118,7 @@
       "tag": "🇷🇺@Hiddify_Nexttt § 0",
       "server": "hajlab.ucdavis.edu",
       "server_port": 80,
-      "uuid": "9efdc712-7fc1-4d15-9cdb-97f774a4475d",
+      "uuid": "d3d3c3be-95be-4b81-b206-a751861f2b76",
       "transport": {
         "type": "ws",
         "path": "/@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy",
@@ -198,7 +198,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "luowOMRJIzY3lh5n"
+      "secret": "ILrh81U-Ps8xzB4B"
     }
   }
 }
