@@ -34,10 +34,6 @@
     ],
     "rules": [
       {
-        "domain": "test.colddwight.xyz",
-        "server": "dns-direct"
-      },
-      {
         "domain_suffix": ".ir",
         "geosite": "ir",
         "server": "dns-direct"
@@ -51,16 +47,16 @@
     "final": "dns-remote",
     "static_ips": {
       "sky.rethinkdns.com": [
-        "2a06:98c1:3121::3",
-        "2a06:98c1:3120::3",
         "188.114.96.3",
         "188.114.97.3",
-        "104.17.148.22",
-        "104.17.147.22",
-        "2a06:98c1:3120::3",
         "2a06:98c1:3121::3",
+        "2a06:98c1:3120::3",
+        "104.17.147.22",
+        "104.17.148.22",
+        "188.114.97.3",
         "188.114.96.3",
-        "188.114.97.3"
+        "2a06:98c1:3120::3",
+        "2a06:98c1:3121::3"
       ]
     },
     "independent_cache": true
@@ -71,7 +67,6 @@
       "tag": "tun-in",
       "mtu": 9000,
       "inet4_address": "172.19.0.1/28",
-      "inet6_address": "fdfe:dcba:9876::1/126",
       "auto_route": true,
       "strict_route": true,
       "endpoint_independent_nat": true,
@@ -91,9 +86,7 @@
       "type": "direct",
       "tag": "dns-in",
       "listen": "127.0.0.1",
-      "listen_port": 6450,
-      "override_address": "1.1.1.1",
-      "override_port": 53
+      "listen_port": 6450
     }
   ],
   "outbounds": [
@@ -102,8 +95,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇱@Hiddify_Nexttt 🇳🇱 § 0",
-        "🇺🇸 @Hiddify_Nexttt 🇺🇸 § 1"
+        " 🇹🇷@Hiddify_Nexttt 🇹🇷 § 0"
       ],
       "default": "auto"
     },
@@ -111,42 +103,38 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇱@Hiddify_Nexttt 🇳🇱 § 0",
-        "🇺🇸 @Hiddify_Nexttt 🇺🇸 § 1"
+        " 🇹🇷@Hiddify_Nexttt 🇹🇷 § 0"
       ],
-      "url": "http://cp.cloudflare.com/",
+      "url": "http://connectivitycheck.gstatic.com/generate_204",
       "interval": "10m0s",
       "idle_timeout": "1h40m0s"
     },
     {
       "type": "vless",
-      "tag": "🇳🇱@Hiddify_Nexttt 🇳🇱 § 0",
-      "server": "185.234.247.125",
-      "server_port": 443,
-      "uuid": "e0adec6c-cca8-479d-abd2-93c6e5dbb362",
-      "flow": "xtls-rprx-vision",
+      "tag": " 🇹🇷@Hiddify_Nexttt 🇹🇷 § 0",
+      "server": "213.142.133.172",
+      "server_port": 7594,
+      "uuid": "2a219df1-a04b-4424-bfd2-cb37aeb10b2c",
       "tls": {
         "enabled": true,
-        "server_name": "www.booking.com",
+        "server_name": "dash.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "bbPonepVL9zTgjSJtLMYWoJJmrCPmHc9hXuEbbhUKUo",
-          "short_id": "7a58880277965526"
+          "public_key": "AZSptdvlWvvmKWEDTY56UsIcnTP8nGCafvPEQOozrxw",
+          "short_id": "765e8e700426816c"
         }
       },
+      "transport": {
+        "type": "grpc",
+        "service_name": "7594vless",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
       "packet_encoding": ""
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 @Hiddify_Nexttt 🇺🇸 § 1",
-      "server": "test.colddwight.xyz",
-      "server_port": 42802,
-      "method": "chacha20-ietf-poly1305",
-      "password": "2PMQDqamcQJ6dnsFgmXe7yvFUcfi2niLc3zJdVuCeTkYa6ohbWA9nmn88wrMQLq2gEW4wG2FtBAEHgHpAWsjehbxuKfXYezN"
     },
     {
       "type": "dns",
@@ -216,7 +204,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "WEjpliARTyGb_GNp"
+      "secret": "Ad9DzsgsEGH7ECnh"
     }
   }
 }
