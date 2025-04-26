@@ -34,6 +34,10 @@
     ],
     "rules": [
       {
+        "domain": "durheu-ueheue-73838hs.haratipulan.ir",
+        "server": "dns-direct"
+      },
+      {
         "domain_suffix": ".ir",
         "geosite": "ir",
         "server": "dns-direct"
@@ -47,14 +51,14 @@
     "final": "dns-remote",
     "static_ips": {
       "sky.rethinkdns.com": [
-        "188.114.96.3",
         "188.114.97.3",
-        "2a06:98c1:3121::3",
+        "188.114.96.3",
         "2a06:98c1:3120::3",
-        "104.17.147.22",
+        "2a06:98c1:3121::3",
         "104.17.148.22",
-        "188.114.96.3",
+        "104.17.147.22",
         "188.114.97.3",
+        "188.114.96.3",
         "2a06:98c1:3121::3",
         "2a06:98c1:3120::3"
       ]
@@ -95,7 +99,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪 @Hiddify_Nexttt 🇩🇪 § 0"
+        "🇫🇮 @Hiddify_Nexttt 🇫🇮 § 0"
       ],
       "default": "auto"
     },
@@ -103,19 +107,25 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪 @Hiddify_Nexttt 🇩🇪 § 0"
+        "🇫🇮 @Hiddify_Nexttt 🇫🇮 § 0"
       ],
       "url": "http://connectivitycheck.gstatic.com/generate_204",
       "interval": "10m0s",
       "idle_timeout": "1h40m0s"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 @Hiddify_Nexttt 🇩🇪 § 0",
-      "server": "89.208.96.95",
-      "server_port": 45462,
-      "method": "chacha20-ietf-poly1305",
-      "password": "kaNLFgnln0AoCzq1CdLvYp"
+      "type": "vless",
+      "tag": "🇫🇮 @Hiddify_Nexttt 🇫🇮 § 0",
+      "server": "durheu-ueheue-73838hs.haratipulan.ir",
+      "server_port": 11424,
+      "uuid": "👉👉BanV2ray👈👈",
+      "transport": {
+        "type": "http",
+        "host": "bmi.ir",
+        "path": "/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray",
+        "method": "GET"
+      },
+      "packet_encoding": ""
     },
     {
       "type": "dns",
@@ -131,7 +141,7 @@
       "tls_fragment": {
         "enabled": true,
         "size": "1-500",
-        "sleep": "0-500"
+"sleep": "0-500"
       }
     },
     {
@@ -185,7 +195,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "G9ncUIK_CpTpYa1H"
+      "secret": "QbgNezJaSTuQpm2d"
     }
   }
 }
