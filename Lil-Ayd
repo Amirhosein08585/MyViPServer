@@ -34,6 +34,10 @@
     ],
     "rules": [
       {
+        "domain": "durheu-ueheue-73838hs.haratipulan.ir",
+        "server": "dns-direct"
+      },
+      {
         "domain_suffix": ".ir",
         "geosite": "ir",
         "server": "dns-direct"
@@ -47,16 +51,16 @@
     "final": "dns-remote",
     "static_ips": {
       "sky.rethinkdns.com": [
-        "2a06:98c1:3121::3",
-        "2a06:98c1:3120::3",
         "188.114.97.3",
         "188.114.96.3",
-        "104.17.148.22",
-        "104.17.147.22",
         "2a06:98c1:3120::3",
         "2a06:98c1:3121::3",
+        "104.17.148.22",
+        "104.17.147.22",
         "188.114.97.3",
-        "188.114.96.3"
+        "188.114.96.3",
+        "2a06:98c1:3121::3",
+        "2a06:98c1:3120::3"
       ]
     },
     "independent_cache": true
@@ -86,9 +90,7 @@
       "type": "direct",
       "tag": "dns-in",
       "listen": "127.0.0.1",
-      "listen_port": 6450,
-      "override_address": "1.1.1.1",
-      "override_port": 53
+      "listen_port": 6450
     }
   ],
   "outbounds": [
@@ -97,7 +99,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "@Hiddify_Nexttt § 134"
+        "🇫🇮 @Hiddify_Nexttt 🇫🇮 § 0"
       ],
       "default": "auto"
     },
@@ -105,18 +107,25 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "@Hiddify_Nexttt § 134"
+        "🇫🇮 @Hiddify_Nexttt 🇫🇮 § 0"
       ],
-      "url": "http://cp.cloudflare.com/",
-      "interval": "10m0s"
+      "url": "http://connectivitycheck.gstatic.com/generate_204",
+      "interval": "10m0s",
+      "idle_timeout": "1h40m0s"
     },
     {
-      "type": "shadowsocks",
-      "tag": "@Hiddify_Nexttt § 134",
-      "server": "156.146.62.162",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks"
+      "type": "vless",
+      "tag": "🇫🇮 @Hiddify_Nexttt 🇫🇮 § 0",
+      "server": "durheu-ueheue-73838hs.haratipulan.ir",
+      "server_port": 11424,
+      "uuid": "👉👉BanV2ray👈👈",
+      "transport": {
+        "type": "http",
+        "host": "bmi.ir",
+        "path": "/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray",
+        "method": "GET"
+      },
+      "packet_encoding": ""
     },
     {
       "type": "dns",
@@ -132,7 +141,7 @@
       "tls_fragment": {
         "enabled": true,
         "size": "1-500",
-        "sleep": "0-500"
+"sleep": "0-500"
       }
     },
     {
@@ -185,7 +194,8 @@
       "path": "clash.db"
     },
     "clash_api": {
-      "external_controller": "127.0.0.1:6756"
+      "external_controller": "127.0.0.1:6756",
+      "secret": "QbgNezJaSTuQpm2d"
     }
   }
 }
