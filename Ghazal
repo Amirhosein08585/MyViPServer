@@ -53,10 +53,10 @@
       "sky.rethinkdns.com": [
         "2a06:98c1:3121::3",
         "2a06:98c1:3120::3",
-        "188.114.96.3",
         "188.114.97.3",
-        "104.17.147.22",
+        "188.114.96.3",
         "104.17.148.22",
+        "104.17.147.22",
         "2a06:98c1:3121::3",
         "2a06:98c1:3120::3",
         "188.114.96.3",
@@ -99,7 +99,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺@Hiddify_nexttt § 0"
+        "🇷🇺@Hiddify_Nexttt § 0"
       ],
       "default": "auto"
     },
@@ -107,7 +107,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺@Hiddify_nexttt § 0"
+        "🇷🇺@Hiddify_Nexttt § 0"
       ],
       "url": "http://connectivitycheck.gstatic.com/generate_204",
       "interval": "10m0s",
@@ -115,10 +115,10 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺@Hiddify_nexttt § 0",
+      "tag": "🇷🇺@Hiddify_Nexttt § 0",
       "server": "hajlab.ucdavis.edu",
       "server_port": 80,
-      "uuid": "0cda4323-c08b-410c-bf07-ea5b5b352666",
+      "uuid": "3823ed56-c57e-43d2-b91c-c6e26dddd078",
       "transport": {
         "type": "ws",
         "path": "/@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy",
@@ -198,7 +198,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "sSxC6f9Gfnd812EX"
+      "secret": "4k6q_lKkdlqD1MyJ"
     }
   }
 }
