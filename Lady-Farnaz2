@@ -47,16 +47,16 @@
     "final": "dns-remote",
     "static_ips": {
       "sky.rethinkdns.com": [
+        "2a06:98c1:3123::",
+        "2a06:98c1:3122::",
         "188.114.97.3",
         "188.114.96.3",
-        "2a06:98c1:3120::3",
-        "2a06:98c1:3121::3",
         "104.17.147.22",
         "104.17.148.22",
-        "188.114.96.3",
-        "188.114.97.3",
+        "2a06:98c1:3120::3",
         "2a06:98c1:3121::3",
-        "2a06:98c1:3120::3"
+        "188.114.97.3",
+        "188.114.96.3"
       ]
     },
     "independent_cache": true
@@ -95,7 +95,9 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪@Hiddify_Nexttt 🇩🇪 § 0"
+        "🇫🇮 @Hiddify_Nexttt 🇫🇮 § 0",
+        "🇫🇮 @Hiddify_Nexttt 🇫🇮 § 1",
+        "🇫🇮 @Hiddify_Nexttt 🇫🇮 § 2"
       ],
       "default": "auto"
     },
@@ -103,7 +105,9 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪@Hiddify_Nexttt 🇩🇪 § 0"
+        "🇫🇮 @Hiddify_Nexttt 🇫🇮 § 0",
+        "🇫🇮 @Hiddify_Nexttt 🇫🇮 § 1",
+        "🇫🇮 @Hiddify_Nexttt 🇫🇮 § 2"
       ],
       "url": "http://connectivitycheck.gstatic.com/generate_204",
       "interval": "10m0s",
@@ -111,11 +115,27 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇩🇪@Hiddify_Nexttt 🇩🇪 § 0",
-      "server": "89.208.96.95",
-      "server_port": 45462,
+      "tag": "🇫🇮 @Hiddify_Nexttt 🇫🇮 § 0",
+      "server": "185.221.196.34",
+      "server_port": 57602,
       "method": "chacha20-ietf-poly1305",
-      "password": "kaNLFgnln0AoCzq1CdLvYp"
+      "password": "YsMyc2KezH5LEuOkL3hIKD"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇮 @Hiddify_Nexttt 🇫🇮 § 1",
+      "server": "185.221.196.34",
+      "server_port": 57602,
+      "method": "chacha20-ietf-poly1305",
+      "password": "HXPLByJ3vYV4NkL6rIiW5C"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇮 @Hiddify_Nexttt 🇫🇮 § 2",
+      "server": "185.221.196.34",
+      "server_port": 57602,
+      "method": "chacha20-ietf-poly1305",
+      "password": "PH9QSE2pYb3c151xVxC2PB"
     },
     {
       "type": "dns",
@@ -185,7 +205,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "w35XQwdmQe1-Iqgi"
+      "secret": "FT0Apo-0czTj9Ssx"
     }
   }
 }
