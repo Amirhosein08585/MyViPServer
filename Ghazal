@@ -57,8 +57,8 @@
         "188.114.96.3",
         "104.17.148.22",
         "104.17.147.22",
-        "2a06:98c1:3120::3",
         "2a06:98c1:3121::3",
+        "2a06:98c1:3120::3",
         "188.114.97.3",
         "188.114.96.3"
       ]
@@ -99,7 +99,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺@Hiddify_Nexttt § 0"
+        "🇷🇺@Hiddify_nexttt § 0"
       ],
       "default": "auto"
     },
@@ -107,7 +107,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺@Hiddify_Nexttt § 0"
+        "🇷🇺@Hiddify_nexttt § 0"
       ],
       "url": "http://cp.cloudflare.com/",
       "interval": "10m0s",
@@ -115,10 +115,10 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺@Hiddify_Nexttt § 0",
+      "tag": "🇷🇺@Hiddify_nexttt § 0",
       "server": "hajlab.ucdavis.edu",
       "server_port": 80,
-      "uuid": "cc4d7e32-d91e-47cb-9992-61a21be5a56c",
+      "uuid": "2cc36042-627b-41c1-9b75-114a7a944c5c",
       "transport": {
         "type": "ws",
         "path": "/@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy",
@@ -198,7 +198,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "RhoIjAHXs6z4wr56"
+      "secret": "eZef18z2rcqudaiw"
     }
   }
 }
