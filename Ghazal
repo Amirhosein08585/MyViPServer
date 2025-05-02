@@ -34,10 +34,6 @@
     ],
     "rules": [
       {
-        "domain": "hajlab.ucdavis.edu",
-        "server": "dns-direct"
-      },
-      {
         "domain_suffix": ".ir",
         "geosite": "ir",
         "server": "dns-direct"
@@ -51,16 +47,16 @@
     "final": "dns-remote",
     "static_ips": {
       "sky.rethinkdns.com": [
-        "2a06:98c1:3121::3",
-        "2a06:98c1:3120::3",
+        "188.114.97.3",
         "188.114.96.3",
-        "188.114.97.3",
-        "104.17.148.22",
-        "104.17.147.22",
         "2a06:98c1:3120::3",
         "2a06:98c1:3121::3",
-        "188.114.97.3",
-        "188.114.96.3"
+        "104.17.147.22",
+        "104.17.148.22",
+        "172.67.214.246",
+        "104.21.83.62",
+        "2606:4700:3030::6815:533e",
+        "2606:4700:3030::ac43:d6f6"
       ]
     },
     "independent_cache": true
@@ -99,7 +95,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺@Hiddify_Nexttt § 0"
+        "🇷🇺 Ghazal 🇷🇺 § 30"
       ],
       "default": "auto"
     },
@@ -107,7 +103,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺@Hiddify_Nexttt § 0"
+        "🇷🇺 Ghazal 🇷🇺 § 30"
       ],
       "url": "http://cp.cloudflare.com/",
       "interval": "10m0s",
@@ -115,21 +111,26 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺@Hiddify_Nexttt § 0",
-      "server": "hajlab.ucdavis.edu",
-      "server_port": 80,
-      "uuid": "ecefd6a5-c7ce-4737-8348-13a038d06845",
-      "transport": {
-        "type": "ws",
-        "path": "/@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy",
-        "headers": {
-          "Host": "joinshhproxybedeeeeeee.ir"
+      "tag": "🇷🇺 Ghazal 🇷🇺 § 30",
+      "server": "5.181.171.10",
+      "server_port": 443,
+      "uuid": "49ed01ad-3bb4-204f-b0ff-a58f658fd618",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "speed.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
         },
-        "max_early_data": 2048,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
+        "reality": {
+          "enabled": true,
+          "public_key": "YNGotlyAx3ELUmi4lxOUjiEDmibqf1pPUTE9o3YYT2Y"
+        }
       },
       "packet_encoding": ""
     },
+    
     {
       "type": "dns",
       "tag": "dns-out"
@@ -198,7 +199,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "XdCkUc7R0f3Jx-5o"
+      "secret": "OeKusK1iSXgb92pE"
     }
   }
 }
