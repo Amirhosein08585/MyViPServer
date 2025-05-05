@@ -59,8 +59,8 @@
         "104.17.148.22",
         "2a06:98c1:3121::3",
         "2a06:98c1:3120::3",
-        "188.114.97.3",
-        "188.114.96.3"
+        "188.114.96.3",
+        "188.114.97.3"
       ]
     },
     "independent_cache": true
@@ -118,7 +118,7 @@
       "tag": "🇷🇺 Ghazal 🇷🇺 § 0",
       "server": "hajlab.ucdavis.edu",
       "server_port": 80,
-      "uuid": "7ee58835-5a08-48c1-b80e-9fbbb81f8432",
+      "uuid": "6fd97b58-f1e4-4c4b-bbc0-b50430446209",
       "transport": {
         "type": "ws",
         "path": "/@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy",
@@ -198,7 +198,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "mj5h-Z1KkD5DOr99"
+      "secret": "n0RNHegFy63z02Ib"
     }
   }
 }
