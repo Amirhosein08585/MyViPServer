@@ -47,16 +47,16 @@
     "final": "dns-remote",
     "static_ips": {
       "sky.rethinkdns.com": [
-        "2a06:98c1:3120::3",
         "2a06:98c1:3121::3",
+        "2a06:98c1:3120::3",
         "188.114.97.3",
         "188.114.96.3",
         "104.17.148.22",
         "104.17.147.22",
-        "2a06:98c1:3121::3",
         "2a06:98c1:3120::3",
-        "188.114.97.3",
-        "188.114.96.3"
+        "2a06:98c1:3121::3",
+        "188.114.96.3",
+        "188.114.97.3"
       ]
     },
     "independent_cache": true
@@ -95,11 +95,8 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪 @Hiddify_Nexttt کانال تلگرام 🇩🇪 § 0",
-        "🇩🇪 @Hiddify_Nexttt کانال تلگرام 🇩🇪 § 3",
-        "🇳🇱 @Hiddify_Nexttt کانال تلگرام 🇳🇱 § 4",
-        "🇬🇧 @Hiddify_Nexttt کانال تلگرام 🇬🇧 § 5",
-        "🇬🇷 @Hiddify_Nexttt کانال تلگرام 🇬🇷 § 6"
+        "🇩🇪 @Hiddify_Nexttt 🇩🇪 § 0",
+        "🇩🇪 @Hiddify_Nexttt 🇩🇪 § 1"
       ],
       "default": "auto"
     },
@@ -107,73 +104,28 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪 @Hiddify_Nexttt کانال تلگرام 🇩🇪 § 0",
-        "🇩🇪 @Hiddify_Nexttt کانال تلگرام 🇩🇪 § 3",
-        "🇳🇱 @Hiddify_Nexttt کانال تلگرام 🇳🇱 § 4",
-        "🇬🇧 @Hiddify_Nexttt کانال تلگرام 🇬🇧 § 5",
-        "🇬🇷 @Hiddify_Nexttt کانال تلگرام 🇬🇷 § 6"
+        "🇩🇪 @Hiddify_Nexttt 🇩🇪 § 0",
+        "🇩🇪 @Hiddify_Nexttt 🇩🇪 § 1"
       ],
       "url": "http://cp.cloudflare.com/",
       "interval": "10m0s",
       "idle_timeout": "1h40m0s"
     },
     {
-      "type": "vless",
-      "tag": "🇩🇪 @Hiddify_Nexttt کانال تلگرام 🇩🇪 § 0",
-      "server": "188.34.201.88",
-      "server_port": 16072,
-      "uuid": "3dd846db-2349-40d5-9c56-f945dc06bd46",
-      "transport": {
-        "type": "grpc",
-        "idle_timeout": "15s",
-        "ping_timeout": "15s"
-      },
-      "packet_encoding": ""
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 @Hiddify_Nexttt کانال تلگرام 🇩🇪 § 3",
-      "server": "78.47.141.72",
-      "server_port": 8880,
-      "uuid": "df0680ca-e43c-498d-ed86-8e196eedd012",
-      "transport": {
-        "type": "grpc",
-        "idle_timeout": "15s",
-        "ping_timeout": "15s"
-      },
-      "packet_encoding": ""
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇱 @Hiddify_Nexttt کانال تلگرام 🇳🇱 § 4",
-      "server": "188.119.112.3",
-      "server_port": 2052,
-      "uuid": "838f5273-5d2d-4630-a0f5-9cc8e4aef4d6",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vkvd127.mycdn.me"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": ""
+      "type": "shadowsocks",
+      "tag": "🇩🇪 @Hiddify_Nexttt 🇩🇪 § 0",
+      "server": "66.151.41.89",
+      "server_port": 33133,
+      "method": "chacha20-ietf-poly1305",
+      "password": "67dYfi1uAv2ZTxXvLoek39"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 @Hiddify_Nexttt کانال تلگرام 🇬🇧 § 5",
-      "server": "85.210.120.237",
-      "server_port": 443,
+      "tag": "🇩🇪 @Hiddify_Nexttt 🇩🇪 § 1",
+      "server": "212.192.31.173",
+      "server_port": 2287,
       "method": "chacha20-ietf-poly1305",
-      "password": "Bog0ELmMM9DSxDdQ"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇷 @Hiddify_Nexttt کانال تلگرام 🇬🇷 § 6",
-      "server": "185.39.207.60",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "Z0UurGkG6iJa"
+      "password": "ziWP0A1dSz98CcPKqpOSeC"
     },
     {
       "type": "dns",
@@ -243,7 +195,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "pQG164kDPKaIwpbm"
+      "secret": "c_yHOdkOR4SwIvcQ"
     }
   }
 }
