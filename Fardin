@@ -34,6 +34,10 @@
     ],
     "rules": [
       {
+        "domain": "hajlab.ucdavis.edu",
+        "server": "dns-direct"
+      },
+      {
         "domain_suffix": ".ir",
         "geosite": "ir",
         "server": "dns-direct"
@@ -47,16 +51,16 @@
     "final": "dns-remote",
     "static_ips": {
       "sky.rethinkdns.com": [
-        "2a06:98c1:3123::",
-        "2a06:98c1:3122::",
+        "2a06:98c1:3121::3",
+        "2a06:98c1:3120::3",
         "188.114.97.3",
         "188.114.96.3",
-        "104.17.147.22",
         "104.17.148.22",
-        "2a06:98c1:3120::3",
+        "104.17.147.22",
         "2a06:98c1:3121::3",
-        "188.114.97.3",
-        "188.114.96.3"
+        "2a06:98c1:3120::3",
+        "188.114.96.3",
+        "188.114.97.3"
       ]
     },
     "independent_cache": true
@@ -95,9 +99,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 @Hiddify_Nexttt 🇫🇮 § 0",
-        "🇫🇮 @Hiddify_Nexttt 🇫🇮 § 1",
-        "🇫🇮 @Hiddify_Nexttt 🇫🇮 § 2"
+        "اتمام مهلت § 0"
       ],
       "default": "auto"
     },
@@ -105,37 +107,28 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 @Hiddify_Nexttt 🇫🇮 § 0",
-        "🇫🇮 @Hiddify_Nexttt 🇫🇮 § 1",
-        "🇫🇮 @Hiddify_Nexttt 🇫🇮 § 2"
+        "اتمام مهلت § 0"
       ],
-      "url": "http://connectivitycheck.gstatic.com/generate_204",
+      "url": "http://cp.cloudflare.com/",
       "interval": "10m0s",
       "idle_timeout": "1h40m0s"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇫🇮 @Hiddify_Nexttt 🇫🇮 § 0",
-      "server": "185.221.196.34",
-      "server_port": 57602,
-      "method": "chacha20-ietf-poly1305",
-      "password": "YsMyc2KezH5LEuOkL3hIKD"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇮 @Hiddify_Nexttt 🇫🇮 § 1",
-      "server": "185.221.196.34",
-      "server_port": 57602,
-      "method": "chacha20-ietf-poly1305",
-      "password": "HXPLByJ3vYV4NkL6rIiW5C"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇮 @Hiddify_Nexttt 🇫🇮 § 2",
-      "server": "185.221.196.34",
-      "server_port": 57602,
-      "method": "chacha20-ietf-poly1305",
-      "password": "PH9QSE2pYb3c151xVxC2PB"
+      "type": "vless",
+      "tag": "اتمام مهلت § 0",
+      "server": "hajlab.ucdavis.edu",
+      "server_port": 80,
+      "uuid": "e0831506-1ab3-470e-933a-2a9f31dfb0d1",
+      "transport": {
+        "type": "ws",
+        "path": "/@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy",
+        "headers": {
+          "Host": "joinshhproxybedeeeeeee.ir"
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": ""
     },
     {
       "type": "dns",
@@ -205,7 +198,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "FT0Apo-0czTj9Ssx"
+      "secret": "khRpVmtalDJxPgwO"
     }
   }
 }
