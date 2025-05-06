@@ -34,7 +34,7 @@
     ],
     "rules": [
       {
-        "domain": "hajlab.ucdavis.edu",
+        "domain": "s3.hidemail.app",
         "server": "dns-direct"
       },
       {
@@ -114,21 +114,12 @@
       "idle_timeout": "1h40m0s"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇷🇺 Ghazal 🇷🇺 § 0",
-      "server": "hajlab.ucdavis.edu",
-      "server_port": 80,
-      "uuid": "43c2245f-9b6a-4186-84ea-c9bcf5090bce",
-      "transport": {
-        "type": "ws",
-        "path": "/@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy",
-        "headers": {
-          "Host": "joinshhproxybedeeeeeee.ir"
-        },
-        "max_early_data": 2048,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": ""
+      "server": "s3.hidemail.app",
+      "server_port": 19634,
+      "method": "chacha20-ietf-poly1305",
+      "password": "h9q2C2V5FdFZWAKWODk8W3"
     },
     {
       "type": "dns",
@@ -198,7 +189,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "vtot4L0SPqKt-JZY"
+      "secret": "wE6YFuD4GH7uSFZB"
     }
   }
 }
