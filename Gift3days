@@ -51,16 +51,16 @@
     "final": "dns-remote",
     "static_ips": {
       "sky.rethinkdns.com": [
-        "2a06:98c1:3120::3",
-        "2a06:98c1:3121::3",
         "188.114.97.3",
         "188.114.96.3",
+        "2a06:98c1:3121::3",
+        "2a06:98c1:3120::3",
         "104.17.148.22",
         "104.17.147.22",
-        "2a06:98c1:3120::3",
-        "2a06:98c1:3121::3",
-        "188.114.96.3",
-        "188.114.97.3"
+        "104.21.83.62",
+        "172.67.214.246",
+        "2606:4700:3030::ac43:d6f6",
+        "2606:4700:3030::6815:533e"
       ]
     },
     "independent_cache": true
@@ -99,7 +99,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇹 @Hiddify_Nexttt 🇵🇹 § 0"
+        "🇵🇹 @Hiddify_Nexttt کانال تلگرام 🇵🇹 § 0"
       ],
       "default": "auto"
     },
@@ -107,7 +107,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇹 @Hiddify_Nexttt 🇵🇹 § 0"
+        "🇵🇹 @Hiddify_Nexttt کانال تلگرام 🇵🇹 § 0"
       ],
       "url": "http://cp.cloudflare.com/",
       "interval": "10m0s",
@@ -115,10 +115,10 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇹 @Hiddify_Nexttt 🇵🇹 § 0",
+      "tag": "🇵🇹 @Hiddify_Nexttt کانال تلگرام 🇵🇹 § 0",
       "server": "parspack.com",
       "server_port": 2052,
-      "uuid": "9fe5d93e-e1ef-47b0-80cb-113a1e3ea3a8",
+      "uuid": "8096932f-0021-416f-8017-c46fa72173f3",
       "transport": {
         "type": "ws",
         "path": "/MOSiV2--MOSiV2--MOSiV2--MOSiV2--MOSiV2--MOSiV2--MOSiV2--MOSiV2--MOSiV2",
@@ -198,7 +198,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "bdOVlYk0cqNxu-rO"
+      "secret": "lpJiwASdk9j2Y3nX"
     }
   }
 }
