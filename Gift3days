@@ -51,16 +51,16 @@
     "final": "dns-remote",
     "static_ips": {
       "sky.rethinkdns.com": [
-        "2a06:98c1:3121::3",
         "2a06:98c1:3120::3",
-        "188.114.96.3",
+        "2a06:98c1:3121::3",
         "188.114.97.3",
+        "188.114.96.3",
         "104.17.148.22",
         "104.17.147.22",
-        "2a06:98c1:3121::3",
         "2a06:98c1:3120::3",
-        "188.114.97.3",
-        "188.114.96.3"
+        "2a06:98c1:3121::3",
+        "188.114.96.3",
+        "188.114.97.3"
       ]
     },
     "independent_cache": true
@@ -118,7 +118,7 @@
       "tag": "🇵🇹 @Hiddify_Nexttt کانال تلگرام 🇵🇹 § 0",
       "server": "parspack.com",
       "server_port": 2052,
-      "uuid": "6d74beed-96a1-4193-87c4-9a1d2f5cc5a4",
+      "uuid": "a7ad6cf6-9518-4321-91cf-44709087c697",
       "transport": {
         "type": "ws",
         "path": "/MOSiV2--MOSiV2--MOSiV2--MOSiV2--MOSiV2--MOSiV2--MOSiV2--MOSiV2--MOSiV2",
@@ -198,7 +198,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "AcvU3QscGiS3sRQM"
+      "secret": "9RutZwlpDkzh-g_7"
     }
   }
 }
