@@ -34,6 +34,10 @@
     ],
     "rules": [
       {
+        "domain": "hajlab.ucdavis.edu",
+        "server": "dns-direct"
+      },
+      {
         "domain_suffix": ".ir",
         "geosite": "ir",
         "server": "dns-direct"
@@ -47,16 +51,16 @@
     "final": "dns-remote",
     "static_ips": {
       "sky.rethinkdns.com": [
-        "2a06:98c1:3121::3",
         "2a06:98c1:3120::3",
+        "2a06:98c1:3121::3",
         "188.114.97.3",
         "188.114.96.3",
         "104.17.147.22",
         "104.17.148.22",
-        "2a06:98c1:3120::3",
         "2a06:98c1:3121::3",
-        "188.114.97.3",
-        "188.114.96.3"
+        "2a06:98c1:3120::3",
+        "188.114.96.3",
+        "188.114.97.3"
       ]
     },
     "independent_cache": true
@@ -95,8 +99,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪 @Hiddify_Nexttt 🇩🇪 § 0",
-        "🇩🇪 @Hiddify_Nexttt 🇩🇪 § 1"
+        "اتمام مهلت § 0"
       ],
       "default": "auto"
     },
@@ -104,28 +107,28 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪 @Hiddify_Nexttt 🇩🇪 § 0",
-        "🇩🇪 @Hiddify_Nexttt 🇩🇪 § 1"
+        "اتمام مهلت § 0"
       ],
       "url": "http://cp.cloudflare.com/",
       "interval": "10m0s",
       "idle_timeout": "1h40m0s"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 @Hiddify_Nexttt 🇩🇪 § 0",
-      "server": "66.151.41.89",
-      "server_port": 33133,
-      "method": "chacha20-ietf-poly1305",
-      "password": "67dYfi1uAv2ZTxXvLoek39"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 @Hiddify_Nexttt 🇩🇪 § 1",
-      "server": "212.192.31.173",
-      "server_port": 2287,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ziWP0A1dSz98CcPKqpOSeC"
+      "type": "vless",
+      "tag": "اتمام مهلت § 0",
+      "server": "hajlab.ucdavis.edu",
+      "server_port": 80,
+      "uuid": "ef812791-33df-4808-964a-45e20bad57a3",
+      "transport": {
+        "type": "ws",
+        "path": "/@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy",
+        "headers": {
+          "Host": "joinshhproxybedeeeeeee.ir"
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": ""
     },
     {
       "type": "dns",
@@ -195,7 +198,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "wuM_G_06ExbAzsME"
+      "secret": "9mdu_wGwoWoz5nsT"
     }
   }
 }
