@@ -34,6 +34,10 @@
     ],
     "rules": [
       {
+        "domain": "parspack.com",
+        "server": "dns-direct"
+      },
+      {
         "domain_suffix": ".ir",
         "geosite": "ir",
         "server": "dns-direct"
@@ -49,8 +53,8 @@
       "sky.rethinkdns.com": [
         "188.114.96.3",
         "188.114.97.3",
-        "2a06:98c1:3120::3",
         "2a06:98c1:3121::3",
+        "2a06:98c1:3120::3",
         "104.17.147.22",
         "104.17.148.22",
         "188.114.96.3",
@@ -95,8 +99,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪 @Hiddify_Nexttt 🇩🇪 § 0",
-        "🇩🇪 @Hiddify_Nexttt 🇩🇪 § 1"
+        "🇵🇹 @Hiddify_Nexttt کانال تلگرام 🇵🇹 § 0"
       ],
       "default": "auto"
     },
@@ -104,28 +107,28 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪 @Hiddify_Nexttt 🇩🇪 § 0",
-        "🇩🇪 @Hiddify_Nexttt 🇩🇪 § 1"
+        "🇵🇹 @Hiddify_Nexttt کانال تلگرام 🇵🇹 § 0"
       ],
       "url": "http://cp.cloudflare.com/",
       "interval": "10m0s",
       "idle_timeout": "1h40m0s"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 @Hiddify_Nexttt 🇩🇪 § 0",
-      "server": "66.151.41.89",
-      "server_port": 33133,
-      "method": "chacha20-ietf-poly1305",
-      "password": "67dYfi1uAv2ZTxXvLoek39"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 @Hiddify_Nexttt 🇩🇪 § 1",
-      "server": "212.192.31.173",
-      "server_port": 2287,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ziWP0A1dSz98CcPKqpOSeC"
+      "type": "vless",
+      "tag": "🇵🇹 @Hiddify_Nexttt کانال تلگرام 🇵🇹 § 0",
+      "server": "parspack.com",
+      "server_port": 2052,
+      "uuid": "a7ad6cf6-9518-4321-91cf-44709087c697",
+      "transport": {
+        "type": "ws",
+        "path": "/MOSiV2--MOSiV2--MOSiV2--MOSiV2--MOSiV2--MOSiV2--MOSiV2--MOSiV2--MOSiV2",
+        "headers": {
+          "Host": "mosiv2.eliii.mosiv2.mosiv2.www.speedtest.net.mosiv2.mosic7.info."
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": ""
     },
     {
       "type": "dns",
@@ -195,7 +198,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "mt5DYPCvc3CLmTAT"
+      "secret": "k3txWQ_MhR8ppIhV"
     }
   }
 }
