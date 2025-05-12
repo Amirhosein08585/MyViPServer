@@ -55,12 +55,12 @@
         "2a06:98c1:3121::3",
         "188.114.96.3",
         "188.114.97.3",
-        "104.17.148.22",
         "104.17.147.22",
-        "2a06:98c1:3120::3",
+        "104.17.148.22",
         "2a06:98c1:3121::3",
-        "188.114.96.1",
-        "188.114.97.1"
+        "2a06:98c1:3120::3",
+        "188.114.96.3",
+        "188.114.97.3"
       ]
     },
     "independent_cache": true
@@ -118,7 +118,7 @@
       "tag": "🇵🇹 @Hiddify_Nexttt 🇵🇹 § 0",
       "server": "parspack.com",
       "server_port": 2052,
-      "uuid": "3277ad0a-9e86-49b7-a297-e432621941c0",
+      "uuid": "e4c8f041-5945-40dd-b6e8-d6e623af267e",
       "transport": {
         "type": "ws",
         "path": "/MOSiV2--MOSiV2--MOSiV2--MOSiV2--MOSiV2--MOSiV2--MOSiV2--MOSiV2--MOSiV2",
@@ -198,7 +198,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "uPwPxd8Xx2om-Esg"
+      "secret": "2DrBtemoNfue8_12"
     }
   }
 }
