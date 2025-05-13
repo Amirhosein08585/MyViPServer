@@ -34,7 +34,7 @@
     ],
     "rules": [
       {
-        "domain": "udgs-7uehe-uehs.haratipulan.ir",
+        "domain": "parspack.com",
         "server": "dns-direct"
       },
       {
@@ -53,12 +53,12 @@
       "sky.rethinkdns.com": [
         "2a06:98c1:3121::3",
         "2a06:98c1:3120::3",
-        "188.114.96.3",
         "188.114.97.3",
-        "104.17.148.22",
+        "188.114.96.3",
         "104.17.147.22",
-        "2a06:98c1:3120::3",
+        "104.17.148.22",
         "2a06:98c1:3121::3",
+        "2a06:98c1:3120::3",
         "188.114.97.3",
         "188.114.96.3"
       ]
@@ -99,7 +99,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮 @Hiddify_Nexttt کانال تلگرام 🇫🇮 § 0"
+        "اتمام مهلت § 0"
       ],
       "default": "auto"
     },
@@ -107,7 +107,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮 @Hiddify_Nexttt کانال تلگرام 🇫🇮 § 0"
+        "اتمام مهلت § 0"
       ],
       "url": "http://cp.cloudflare.com/",
       "interval": "10m0s",
@@ -115,15 +115,18 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 @Hiddify_Nexttt کانال تلگرام 🇫🇮 § 0",
-      "server": "udgs-7uehe-uehs.haratipulan.ir",
-      "server_port": 45624,
-      "uuid": "👉👉BanV2ray👈👈",
+      "tag": "اتمام مهلت § 0",
+      "server": "parspack.com",
+      "server_port": 2052,
+      "uuid": "3277ad0a-9e86-49b7-a297-e432621941c0",
       "transport": {
-        "type": "http",
-        "host": "zara.com",
-        "path": "//@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray",
-        "method": "GET"
+        "type": "ws",
+        "path": "/MOSiV2--MOSiV2--MOSiV2--MOSiV2--MOSiV2--MOSiV2--MOSiV2--MOSiV2--MOSiV2",
+        "headers": {
+          "Host": "mosiv2.eliii.mosiv2.mosiv2.www.speedtest.net.mosiv2.mosic7.info."
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
       },
       "packet_encoding": ""
     },
@@ -195,7 +198,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "7hY9wvheZB6cx5kQ"
+      "secret": "Xejj_kwHPx_j4bIZ"
     }
   }
 }
