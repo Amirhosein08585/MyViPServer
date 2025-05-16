@@ -34,6 +34,10 @@
     ],
     "rules": [
       {
+        "domain": "udgs-7uehe-uehs.haratipulan.ir",
+        "server": "dns-direct"
+      },
+      {
         "domain_suffix": ".ir",
         "geosite": "ir",
         "server": "dns-direct"
@@ -47,16 +51,16 @@
     "final": "dns-remote",
     "static_ips": {
       "sky.rethinkdns.com": [
-        "2a06:98c1:3121::3",
-        "2a06:98c1:3120::3",
+        "188.114.96.3",
         "188.114.97.3",
-        "188.114.96.3",
-        "104.17.148.22",
-        "104.17.147.22",
-        "2a06:98c1:3120::3",
         "2a06:98c1:3121::3",
+        "2a06:98c1:3120::3",
+        "104.17.147.22",
+        "104.17.148.22",
         "188.114.96.3",
-        "188.114.97.3"
+        "188.114.97.3",
+        "2a06:98c1:3120::3",
+        "2a06:98c1:3121::3"
       ]
     },
     "independent_cache": true
@@ -95,8 +99,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇩🇪 @Hiddify_Nexttt 🇩🇪 § 0",
-        "🇩🇪 @Hiddify_Nexttt 🇩🇪 § 1"
+        "🇫🇮@Hiddify_Nexttt کانال تلگرام 🇫🇮 § 0"
       ],
       "default": "auto"
     },
@@ -104,28 +107,25 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇩🇪 @Hiddify_Nexttt 🇩🇪 § 0",
-        "🇩🇪 @Hiddify_Nexttt 🇩🇪 § 1"
+        "🇫🇮@Hiddify_Nexttt کانال تلگرام 🇫🇮 § 0"
       ],
       "url": "http://cp.cloudflare.com/",
       "interval": "10m0s",
       "idle_timeout": "1h40m0s"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 @Hiddify_Nexttt 🇩🇪 § 0",
-      "server": "66.151.41.89",
-      "server_port": 33133,
-      "method": "chacha20-ietf-poly1305",
-      "password": "67dYfi1uAv2ZTxXvLoek39"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 @Hiddify_Nexttt 🇩🇪 § 1",
-      "server": "212.192.31.173",
-      "server_port": 2287,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ziWP0A1dSz98CcPKqpOSeC"
+      "type": "vless",
+      "tag": "🇫🇮@Hiddify_Nexttt کانال تلگرام 🇫🇮 § 0",
+      "server": "udgs-7uehe-uehs.haratipulan.ir",
+      "server_port": 34678,
+      "uuid": "👉👉BanV2ray👈👈",
+      "transport": {
+        "type": "http",
+        "host": "zara.com",
+        "path": "//@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray",
+        "method": "GET"
+      },
+      "packet_encoding": ""
     },
     {
       "type": "dns",
@@ -195,7 +195,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "c_yHOdkOR4SwIvcQ"
+      "secret": "4U97m8bbGVMEiYMN"
     }
   }
 }
