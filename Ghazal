@@ -34,7 +34,7 @@
     ],
     "rules": [
       {
-        "domain": "s3.hidemail.app",
+        "domain": "hajlab.ucdavis.edu",
         "server": "dns-direct"
       },
       {
@@ -53,14 +53,14 @@
       "sky.rethinkdns.com": [
         "2a06:98c1:3121::3",
         "2a06:98c1:3120::3",
+        "188.114.97.3",
         "188.114.96.3",
-        "188.114.97.3",
-        "104.17.147.22",
         "104.17.148.22",
-        "2a06:98c1:3120::3",
+        "104.17.147.22",
         "2a06:98c1:3121::3",
-        "188.114.97.3",
-        "188.114.96.3"
+        "2a06:98c1:3120::3",
+        "188.114.96.3",
+        "188.114.97.3"
       ]
     },
     "independent_cache": true
@@ -99,7 +99,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 Ghazal 🇷🇺 § 0"
+        "اتمام مهلت § 0"
       ],
       "default": "auto"
     },
@@ -107,19 +107,28 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 Ghazal 🇷🇺 § 0"
+        "اتمام مهلت § 0"
       ],
       "url": "http://cp.cloudflare.com/",
       "interval": "10m0s",
       "idle_timeout": "1h40m0s"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 Ghazal 🇷🇺 § 0",
-      "server": "s3.hidemail.app",
-      "server_port": 19634,
-      "method": "chacha20-ietf-poly1305",
-      "password": "h9q2C2V5FdFZWAKWODk8W3"
+      "type": "vless",
+      "tag": "اتمام مهلت § 0",
+      "server": "hajlab.ucdavis.edu",
+      "server_port": 80,
+      "uuid": "e0831506-1ab3-470e-933a-2a9f31dfb0d1",
+      "transport": {
+        "type": "ws",
+        "path": "/@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy",
+        "headers": {
+          "Host": "joinshhproxybedeeeeeee.ir"
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": ""
     },
     {
       "type": "dns",
@@ -189,7 +198,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "wE6YFuD4GH7uSFZB"
+      "secret": "khRpVmtalDJxPgwO"
     }
   }
 }
