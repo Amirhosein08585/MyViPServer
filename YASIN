@@ -34,7 +34,7 @@
     ],
     "rules": [
       {
-        "domain": "udgs-7uehe-uehs.haratipulan.ir",
+        "domain": "s3.hidemail.app",
         "server": "dns-direct"
       },
       {
@@ -99,7 +99,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇫🇮@Hiddify_Nexttt کانال تلگرام 🇫🇮 § 0"
+        "🇷🇺 @Hiddify_nexttt 🇷🇺 § 0"
       ],
       "default": "auto"
     },
@@ -107,25 +107,19 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇫🇮@Hiddify_Nexttt کانال تلگرام 🇫🇮 § 0"
+        "🇷🇺 @Hiddify_nexttt 🇷🇺 § 0"
       ],
       "url": "http://cp.cloudflare.com/",
       "interval": "10m0s",
       "idle_timeout": "1h40m0s"
     },
     {
-      "type": "vless",
-      "tag": "🇫🇮@Hiddify_Nexttt کانال تلگرام 🇫🇮 § 0",
-      "server": "udgs-7uehe-uehs.haratipulan.ir",
-      "server_port": 34678,
-      "uuid": "👉👉BanV2ray👈👈",
-      "transport": {
-        "type": "http",
-        "host": "zara.com",
-        "path": "//@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray",
-        "method": "GET"
-      },
-      "packet_encoding": ""
+      "type": "shadowsocks",
+      "tag": "🇷🇺 @Hiddify_nexttt 🇷🇺 § 0",
+      "server": "s3.hidemail.app",
+      "server_port": 19634,
+      "method": "chacha20-ietf-poly1305",
+      "password": "h9q2C2V5FdFZWAKWODk8W3"
     },
     {
       "type": "dns",
@@ -195,7 +189,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "4U97m8bbGVMEiYMN"
+      "secret": "4PKexTdsvf6E50tO"
     }
   }
 }
