@@ -34,7 +34,7 @@
     ],
     "rules": [
       {
-        "domain": "test.colddwight.xyz",
+        "domain": "shgf-372gf-327fgs.haratipulan.ir",
         "server": "dns-direct"
       },
       {
@@ -51,16 +51,16 @@
     "final": "dns-remote",
     "static_ips": {
       "sky.rethinkdns.com": [
-        "2a06:98c1:3120::3",
         "2a06:98c1:3121::3",
+        "2a06:98c1:3120::3",
         "188.114.97.3",
         "188.114.96.3",
-        "104.17.147.22",
         "104.17.148.22",
-        "2a06:98c1:3120::3",
+        "104.17.147.22",
         "2a06:98c1:3121::3",
-        "188.114.96.3",
-        "188.114.97.3"
+        "2a06:98c1:3120::3",
+        "188.114.97.3",
+        "188.114.96.3"
       ]
     },
     "independent_cache": true
@@ -99,7 +99,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 @Hiddify_Nexttt 🇺🇸 § 1"
+        " Javad § 0"
       ],
       "default": "auto"
     },
@@ -107,19 +107,25 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 @Hiddify_Nexttt 🇺🇸 § 1"
+        " Javad § 0"
       ],
       "url": "http://cp.cloudflare.com/",
       "interval": "10m0s",
       "idle_timeout": "1h40m0s"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇺🇸 @Hiddify_Nexttt 🇺🇸 § 1",
-      "server": "test.colddwight.xyz",
-      "server_port": 42802,
-      "method": "chacha20-ietf-poly1305",
-      "password": "2PMQDqamcQJ6dnsFgmXe7yvFUcfi2niLc3zJdVuCeTkYa6ohbWA9nmn88wrMQLq2gEW4wG2FtBAEHgHpAWsjehbxuKfXYezN"
+      "type": "vless",
+      "tag": " Javad § 0",
+      "server": "shgf-372gf-327fgs.haratipulan.ir",
+      "server_port": 37543,
+      "uuid": "👉👉BanV2ray👈👈",
+      "transport": {
+        "type": "http",
+        "host": "zara.com",
+        "path": "/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray",
+        "method": "GET"
+      },
+      "packet_encoding": ""
     },
     {
       "type": "dns",
@@ -189,7 +195,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "ojvoOI-ZMHzvV5QA"
+      "secret": "CDdxlE_85I8yNXYh"
     }
   }
 }
