@@ -34,10 +34,6 @@
     ],
     "rules": [
       {
-        "domain": "hajlab.ucdavis.edu",
-        "server": "dns-direct"
-      },
-      {
         "domain_suffix": ".ir",
         "geosite": "ir",
         "server": "dns-direct"
@@ -51,16 +47,16 @@
     "final": "dns-remote",
     "static_ips": {
       "sky.rethinkdns.com": [
-        "2a06:98c1:3120::3",
-        "2a06:98c1:3121::3",
         "188.114.97.3",
         "188.114.96.3",
-        "104.17.147.22",
-        "104.17.148.22",
         "2a06:98c1:3121::3",
         "2a06:98c1:3120::3",
+        "104.17.147.22",
+        "104.17.148.22",
         "188.114.96.3",
-        "188.114.97.3"
+        "188.114.97.3",
+        "2a06:98c1:3120::3",
+        "2a06:98c1:3121::3"
       ]
     },
     "independent_cache": true
@@ -99,7 +95,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "اتمام مهلت § 0"
+        " Tootfarangi § 0"
       ],
       "default": "auto"
     },
@@ -107,28 +103,28 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "اتمام مهلت § 0"
+        " Tootfarangi § 0"
       ],
       "url": "http://cp.cloudflare.com/",
       "interval": "10m0s",
       "idle_timeout": "1h40m0s"
     },
     {
-      "type": "vless",
-      "tag": "اتمام مهلت § 0",
-      "server": "hajlab.ucdavis.edu",
-      "server_port": 80,
-      "uuid": "ef812791-33df-4808-964a-45e20bad57a3",
-      "transport": {
-        "type": "ws",
-        "path": "/@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy",
-        "headers": {
-          "Host": "joinshhproxybedeeeeeee.ir"
-        },
-        "max_early_data": 2048,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": ""
+      "type": "wireguard",
+      "tag": " Tootfarangi § 0",
+      "local_address": [
+        "172.16.0.2/24",
+        "2606:4700:110:8edd:5668:1b79:3ef3:598d/128"
+      ],
+      "private_key": "6Ama0Zsqy6BmWQnyP99xGSmpPH5qDaw89+qaOWO3vXk=",
+      "server": "188.114.97.78",
+      "server_port": 945,
+      "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
+      "reserved": "AAAA",
+      "mtu": 1280,
+      "fake_packets": "5-10",
+      "fake_packets_size": "40-100",
+      "fake_packets_delay": "20-250"
     },
     {
       "type": "dns",
@@ -198,7 +194,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "9mdu_wGwoWoz5nsT"
+      "secret": "pTARSD47CsMUbx6O"
     }
   }
 }
