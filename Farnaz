@@ -34,6 +34,10 @@
     ],
     "rules": [
       {
+        "domain": "usbsh-usvsus-uwv72.kartvmanpol.ir",
+        "server": "dns-direct"
+      },
+      {
         "domain_suffix": ".ir",
         "geosite": "ir",
         "server": "dns-direct"
@@ -95,7 +99,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "@Hiddify_Nexttt 🇬🇧 § 0"
+        "🇫🇮 Ay.D 🇫🇮 § 0"
       ],
       "default": "auto"
     },
@@ -103,7 +107,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "@Hiddify_Nexttt 🇬🇧 § 0"
+        "🇫🇮 Ay.D 🇫🇮 § 0"
       ],
       "url": "http://cp.cloudflare.com/",
       "interval": "10m0s",
@@ -111,14 +115,15 @@
     },
     {
       "type": "vless",
-      "tag": "@Hiddify_Nexttt 🇬🇧 § 0",
-      "server": "45.89.111.250",
-      "server_port": 8880,
-      "uuid": "df0680ca-e43c-498d-ed86-8e196eedd012",
+      "tag": "🇫🇮 Ay.D 🇫🇮 § 0",
+      "server": "usbsh-usvsus-uwv72.kartvmanpol.ir",
+      "server_port": 23509,
+      "uuid": "👉BanV2ray👈",
       "transport": {
-        "type": "grpc",
-        "idle_timeout": "15s",
-        "ping_timeout": "15s"
+        "type": "http",
+        "host": "khabarfarsi.com",
+        "path": "/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray/@BanV2ray",
+        "method": "GET"
       },
       "packet_encoding": ""
     },
@@ -135,7 +140,7 @@
       "tag": "direct-fragment",
       "tls_fragment": {
         "enabled": true,
-        "size": "1-500",
+"size": "1-500",
         "sleep": "0-500"
       }
     },
@@ -190,7 +195,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "QBlsSMFJ1UlqgpZR"
+      "secret": "Aqjga9TaS5AB6NCO"
     }
   }
 }
