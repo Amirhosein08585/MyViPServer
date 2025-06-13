@@ -47,16 +47,16 @@
     "final": "dns-remote",
     "static_ips": {
       "sky.rethinkdns.com": [
-        "188.114.96.3",
         "188.114.97.3",
+        "188.114.96.3",
         "2a06:98c1:3120::3",
         "2a06:98c1:3121::3",
-        "104.17.147.22",
         "104.17.148.22",
-        "188.114.96.3",
-        "188.114.97.3",
-        "2a06:98c1:3120::3",
-        "2a06:98c1:3121::3"
+        "104.17.147.22",
+        "172.67.214.246",
+        "104.21.83.62",
+        "2606:4700:3030::6815:533e",
+        "2606:4700:3030::ac43:d6f6"
       ]
     },
     "independent_cache": true
@@ -95,7 +95,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        " Pari § 0"
+        "@Hiddify_Nexttt 🇬🇧 § 0"
       ],
       "default": "auto"
     },
@@ -103,28 +103,24 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        " Pari § 0"
+        "@Hiddify_Nexttt 🇬🇧 § 0"
       ],
       "url": "http://cp.cloudflare.com/",
       "interval": "10m0s",
       "idle_timeout": "1h40m0s"
     },
     {
-      "type": "wireguard",
-      "tag": " Pari § 0",
-      "local_address": [
-        "172.16.0.2/24",
-        "2606:4700:110:8edd:5668:1b79:3ef3:598d/128"
-      ],
-      "private_key": "6Ama0Zsqy6BmWQnyP99xGSmpPH5qDaw89+qaOWO3vXk=",
-      "server": "188.114.97.78",
-      "server_port": 945,
-      "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
-      "reserved": "AAAA",
-      "mtu": 1280,
-      "fake_packets": "5-10",
-      "fake_packets_size": "40-100",
-      "fake_packets_delay": "20-250"
+      "type": "vless",
+      "tag": "@Hiddify_Nexttt 🇬🇧 § 0",
+      "server": "45.89.111.250",
+      "server_port": 8880,
+      "uuid": "df0680ca-e43c-498d-ed86-8e196eedd012",
+      "transport": {
+        "type": "grpc",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": ""
     },
     {
       "type": "dns",
@@ -194,7 +190,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "uSopzRBYBVml9oWA"
+      "secret": "lKyKOMfzKICX6kRy"
     }
   }
 }
